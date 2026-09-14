@@ -1,5 +1,7 @@
 # Bronco openpilot: independent firmware investigation
 
+**Follow-up available:** [application consumers, startup selection, and remaining gates](POST_VALIDATION_FINDINGS.md). That update traces LMC2 beyond the stopping point in this initial report and verifies a narrow correction to the analysis tool. The initial evidence below is retained as the baseline; its store-width limitation is addressed in the follow-up excerpts.
+
 Prepared with ChatGPT/Codex; see [provenance and credits](../THIRD_PARTY.md).
 
 **Research date:** September 14, 2026  

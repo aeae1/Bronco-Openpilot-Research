@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-09-14",
+  "checks": [
+    {
+      "date": "2026-05-07T05:11:43Z",
+      "label": "firmware",
+      "sha": "f545afe509aa936a32ad026d411add394f8464ae",
+      "url": "https://api.github.com/repos/ghostdev137/ford-pscm-re/commits?per_page=1"
+    },
+    {
+      "bronco_mentions": [
+        "  FORD_BRONCO_SPORT_MK1 = FordPlatformConfig(",
+        "    [FordCarDocs(\"Ford Bronco Sport 2021-24\")],"
+      ],
+      "label": "ford_definitions",
+      "url": "https://raw.githubusercontent.com/commaai/opendbc/d8f6d5cf9600f5c1861a09563568018cc4eb8025/opendbc/car/ford/values.py"
+    }
+  ],
+  "forum": {
+    "url": "https://www.bronco6g.com/forum/threads/enabling-intelligent-adaptive-cruise-control-and-lane-centering.71121/page-30",
+    "latest_visible_post_date": "2026-08-19",
+    "last_post_number": 440,
+    "scope": "Reviewed public page; speculation about later camera housing did not establish a verified solution."
+  },
+  "discord_accessed": false
+}

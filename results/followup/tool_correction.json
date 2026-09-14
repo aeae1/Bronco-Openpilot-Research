@@ -1,0 +1,10 @@
+{
+  "scope": "Ghidra analysis language only; no firmware change",
+  "source": "Ghidra/Processors/V850/data/languages/V850_instructions.sinc",
+  "source_original_sha256": "0aa96a8c2e1fc7ba595eb9a67da6299749f81ba5495e549b70a3a8d0bc7e38db",
+  "source_corrected_sha256": "2242df5ed5d61ce11e7f2beb7e5df0c519889be678c13d694afbf04e954e076d",
+  "compiled_original_sha256": "e0ca53f60a0d06e32b6bd7686fc24308b3195dd88a97c4240ef76341abccbd11",
+  "compiled_corrected_sha256": "39aceb85101dc4c68371087da82bc94b13d661292fd36b3bc82ffc590327329b",
+  "change": "ST.W reg3, disp23[reg1]: 16-bit store changed to 32-bit store",
+  "architecture_reference": "Renesas R01US0123EJ0140 Rev.1.40, page 314"
+}

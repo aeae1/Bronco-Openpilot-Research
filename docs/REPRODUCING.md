@@ -16,6 +16,7 @@ python3 fetch_firmware.py
 python3 fetch_port_sources.py
 python3 analyze_firmware.py
 python3 check_checksum.py
+python3 analyze_followup.py
 ```
 
 Expected outcomes:
@@ -70,11 +71,83 @@ GHIDRA/support/analyzeHeadless PROJECTS BroncoReview \
 
 Tool-generated names and function boundaries may change across analysis runs.
 Basic instruction bytes and table values are the reproducibility targets.
-One stock V850 `st.w disp23` PCode definition models a 16-bit store; this was
-identified as a limitation rather than patched into an unreviewed firmware
-simulation. The independent checksum interpreter uses only the basic operations
+The initial excerpts used the stock V850 language with its documented
+`st.w disp23` store-width limitation. The follow-up below corrects and checks
+that one definition in a dedicated analysis installation. The independent checksum interpreter uses only the basic operations
 actually present in that routine. The research repository's processor patches
 with broad placeholder decoders were not used for final excerpts.
+
+## Reproduce the post-validation follow-up
+
+Read [the follow-up report](POST_VALIDATION_FINDINGS.md) for claim boundaries.
+`python3 analyze_followup.py` checks the three exact extracted-image hashes,
+271 initialization records, nine getter bodies, the startup selector values,
+status-mask defaults, directory-selection tables, and the two audited store
+encodings. It writes `results/followup/static_findings.json`.
+
+The virtual checks use the same prepared Ghidra project and register context
+as above. Replace `GHIDRA`, `PROJECTS`, and `REPO` with absolute paths. The
+follow-up used a copy of the existing project and a dedicated Ghidra installation.
+No command below connects to a device or changes firmware bytes.
+
+First, capture the stock instruction-model behavior **before** the correction:
+
+```bash
+GHIDRA/support/analyzeHeadless PROJECTS BroncoReview \
+  -process NB3C-14D003-AB_block0_0x10040000.bin -noanalysis \
+  -scriptPath REPO/ghidra_scripts \
+  -postScript BroncoInstructionCheck.java REPO/results/followup/stw_stock.tsv
+```
+
+Expected: 12 rows marked `false`, demonstrating the two-byte-store defect.
+Then close any running instance using that installation and run:
+
+```bash
+python3 fix_ghidra_stw.py GHIDRA --report REPO/results/followup/tool_correction.json
+```
+
+The script requires the exact audited source hash, retains `.bronco-original`
+backups, and rebuilds `V850e3.sla`. Its JDK must be available through `JAVA_HOME`
+or the installation's normal launcher configuration. Use a fresh dedicated
+installation for another baseline comparison; rerunning on already changed
+source is intentionally rejected.
+
+Reopen the project and run the focused checks:
+
+```bash
+GHIDRA/support/analyzeHeadless PROJECTS BroncoReview \
+  -process NB3C-14D003-AB_block0_0x10040000.bin -noanalysis \
+  -scriptPath REPO/ghidra_scripts \
+  -postScript BroncoInstructionCheck.java REPO/results/followup/stw_corrected.tsv \
+  -postScript BroncoSelectionCheck.java REPO/results/followup/selection_check.tsv
+```
+
+Expected: 12 corrected store cases pass; three selected initialization copies
+match every source byte and preserve their immediate neighbors; four source
+selection cases pass. The default case selects LMC2. The other three cases use
+artificial inputs **only in virtual memory**. The selection test stops at the
+branch, before it reads either command source. These checks do not execute a
+full boot, simulate a driving vehicle, or establish steering authority.
+
+To regenerate selected function excerpts, add a `BroncoTrace` post-script, for
+example:
+
+```text
+-postScript BroncoTrace.java REPO/results/followup/ghidra b8672,de040,bd05c,bd486,bd516,bd51e,bd526,bd52e,bd536,bd54e,bd56e,bd576,f3e34,ed420,ed884,ed662,f39ec,ed3e6,f3d2e,d06d4,d06f4,d08ec,d0b34,b773c,b77aa
+```
+
+`BroncoTrace` accepts function entry addresses, not arbitrary addresses inside
+functions. `BroncoRange` is an exploratory range exporter; its optional `linear`
+mode can decode data as instructions and marks every row `LINEAR_CANDIDATE`.
+Use independently established control flow and bytes before drawing conclusions.
+In particular, a nearby `prepare` instruction is not proof of a function boundary.
+
+Ghidra's process exit code alone is insufficient: inspect the log for script or
+compile errors, require the output files, and check their contents. The checked-in
+[results](../results/followup/) preserve stock and corrected outputs. Their
+[evidence manifest](../results/followup/evidence_sha256.json) hashes the selected
+artifacts. Decompiled float expressions and some call prototypes remain imperfect;
+the narrow correction does not validate the entire instruction model.
 
 ## Files
 

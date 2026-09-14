@@ -15,6 +15,8 @@ Individual file hashes and URLs are recorded in [firmware_download_manifest.json
 
 Raw firmware and retrieved third-party source are downloaded on demand and ignored by git. Availability at a public URL does not authenticate firmware as a Ford-approved release or establish compatibility with the target vehicle.
 
+The follow-up also uses the [Renesas-authored RH850G3M software manual](https://docs.alexrp.com/v850/rh850g3m.pdf), R01US0123EJ0140 Rev.1.40, pages 314, 386, and 392. That copy is hosted on a third-party mirror. Its instruction definitions do not identify the Bronco's exact processor model. The narrow Ghidra language correction and hashes are documented in [the follow-up report](docs/POST_VALIDATION_FINDINGS.md).
+
 ## Development history
 
 - [AJ/ajzride's posts in the Bronco6G development discussion](https://www.bronco6g.com/forum/threads/enabling-intelligent-adaptive-cruise-control-and-lane-centering.71121/page-29) describe earlier decompilation, legacy-CAN/CAN-FD differences, gateway delivery observations, and direct-rack harness/termination difficulties. See especially the May 15 and June 27, 2026 posts. These are firsthand development reports, not observations from the target vehicle.
@@ -30,6 +32,6 @@ The README banner combines a supplied Bronco illustration, generated background 
 
 The MIT license in this repository applies to original analysis scripts, Ghidra helper scripts, and original explanatory text. It does not grant rights to third-party firmware, downloaded dependencies/source, or firmware-derived material.
 
-`results/ghidra/*.asm` and `results/ghidra/*.c` are selected disassembly and provisional decompilation excerpts derived from the public firmware sample. They are identified as third-party-derived research material, not original Ford source or material relicensed under MIT. Embedded firmware header text in the structured results is also third-party material. All third-party rights and any applicable upstream terms remain with their respective owners. No raw or modified firmware is distributed here.
+`results/ghidra/` and `results/followup/ghidra/` contain selected disassembly and provisional decompilation excerpts derived from the public firmware sample. They are identified as third-party-derived research material, not original Ford source or material relicensed under MIT. Embedded firmware header text in the structured results is also third-party material. All third-party rights and any applicable upstream terms remain with their respective owners. No raw or modified firmware is distributed here.
 
 The original archive's hash list is preserved as [INITIAL_BUNDLE_SHA256SUMS.json](results/INITIAL_BUNDLE_SHA256SUMS.json). It describes the pre-repository bundle, including its original filenames; it is historical provenance, not a checksum manifest for the current repository. Repository commits track subsequent edits.

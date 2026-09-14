@@ -10,6 +10,12 @@ Three things have to work separately:
 
 ## What we actually learned
 
+**The follow-up found something stronger:** the sample contains code that uses the requested road path, and its startup settings select the newer LMC2 input. We checked that particular selection by running a small piece of the code in virtual memory. We have not run the whole steering computer or connected to a vehicle.
+
+In everyday terms: we found where the steering software reads the proposed path, and the sample's starting settings point it toward the message format we are investigating. It still has other checks before it can act. Its LMC2 validity result is one item in a larger set of required status checks; having a fresh, correctly formatted message is only part of that set.
+
+We also corrected a bug in the analysis software that was making four-byte configuration pointers look like two-byte values. The correction passed 12 focused checks. This fixed our reading of the code; it did not alter Ford's firmware. The [new report](POST_VALIDATION_FINDINGS.md) documents the application trace, startup checks, and unresolved conditions.
+
 The public firmware has more than a label for the newer lane-centering message, called **LMC2**. We followed how that message is looked up, handed between internal software layers, recorded as received, and checked by the application.
 
 We corrected one detail in a public table description. Its grouping of the bytes pointed LMC2 toward the internal number for the neighboring message. Following the instructions that read the table identifies the correct internal number, 23. This gives subsequent analysis a firmer starting point. It does not prove that the table mistake caused anybody's vehicle experiment to fail.
@@ -37,7 +43,7 @@ There is no basis to say previous developers lacked the ability to find this. So
 
 ## Is there reason for hope?
 
-Yes, there is a specific technical reason to keep investigating: the public sample contains a recognizable factory receive and validation path. That is more encouraging than finding no such path.
+Yes. The public sample has a factory receive and validation path, application code that consumes its values, and startup defaults that select the LMC2 input branch. Those are specific, reproducible reasons to keep investigating.
 
 The difficult part is still unresolved. We need to match the installed firmware, establish delivery, and trace all conditions between receiving the request and permitting steering. A legitimate configuration could be missing, a path could be inactive in this vehicle, or additional limits could make the intended use impractical. Current evidence cannot choose between those outcomes.
 

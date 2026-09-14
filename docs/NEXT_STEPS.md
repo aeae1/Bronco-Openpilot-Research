@@ -12,12 +12,14 @@ This can happen alongside the next offline milestone.
 
 ## 2. Strengthen the decoding and trace steering permission
 
+**Completed in the [post-validation follow-up](POST_VALIDATION_FINDINGS.md):** a narrow Ghidra store-width correction with 12 focused checks; LMC2 application getters and consumers; startup input-source selection with three exact-copy checks and four branch cases; status-summary bit 9 and two masks that require it; and the directory bank/override structure. These results do not complete the steering-permission trace.
+
 **Work that can continue on a computer now:**
 
-- Check the relevant V850 instruction semantics against authoritative processor documentation. The current Ghidra language's `st.w disp23` store-width issue and incomplete function prototypes limit trust in the decompiled C. Resolve the instructions used by the next trace before treating it as proof.
-- Follow the decoded LMC2 values and validity outputs beyond `0x74B76`, `0x74A1E`, and `0x74950` into their consumers. Record every observed enable condition and rejection path.
+- Check the relevant V850 instruction semantics against authoritative processor documentation. The focused `st.w disp23` correction is verified, but other semantics and incomplete function prototypes still limit trust in decompiled C. Floating-point conversions and recovered arguments need particular care.
+- Follow the new application paths: `0xED420` → `0xED884` → `0xED662`, and `0xF3E34` → the routines scheduled by `0xF3D2E`. Map the other bits required by the observed status masks and every subsequent enable/rejection condition. The sample's initialized LMC2 input selection is established; final steering permission is not.
 - Trace arbitration with other steering functions, driver override, command bounds, fault handling, and the eventual authority applied to the steering actuator. Do not equate signal bit widths with actuator limits.
-- Resolve the active calibration-directory selection and the timer clock/units. ROM defaults are not measurements of the running vehicle.
+- Determine the actual runtime directory selection, including the separate RAM override that can replace receive-parameter slot 27. Identify the hardware counter's frequency: division by 8000 is established, but physical timeout units are not.
 
 **Result needed:** an evidence table linking each relevant condition to its instructions, inputs, configured parameters, and still-unresolved dependencies. Any decoder correction should include a focused instruction check against the architecture definition. None of this requires a firmware patch or a vehicle connection.
 

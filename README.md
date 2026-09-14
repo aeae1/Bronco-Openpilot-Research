@@ -15,13 +15,16 @@ That gives us a concrete place to continue. It does not yet tell us whether the 
 | Question | Current evidence |
 |---|---|
 | Does the public sample recognize LMC2? | A traced receive path, arrival tracking, checksum/counter handling, and stale-data handling are present. |
-| What did this investigation add? | A corrected receive-table interpretation, a mapped internal route, a checksum comparison, and identified validation/calibration entry points. |
+| What did this investigation add? | A corrected receive-table interpretation, a mapped internal route, a checksum comparison, and a trace into application consumers and startup input selection. |
 | Does this explain the reported connection problem? | No. Delivery through the gateway and acceptance inside the steering computer remain separate unresolved questions. |
 | Can this Bronco safely run openpilot now? | This research does not establish that. No vehicle testing was performed. |
 | Must we defeat a security system? | Nothing in the traced receive/checksum path establishes that requirement. Other activation or security conditions have not been ruled out. |
 
+**New follow-up:** the trace now reaches application code that consumes LMC2 path data. The sample's startup defaults select its LMC2 input branch, confirmed by targeted virtual-memory checks. Its validity state also participates in broader application status checks. Read [the new findings and their limits](docs/POST_VALIDATION_FINDINGS.md). Selecting an input source is still separate from permitting steering.
+
 ## Start here
 
+- [New findings: application consumers, startup selection, and remaining gates](docs/POST_VALIDATION_FINDINGS.md)
 - [Owner guide: what to collect with FORScan and your OBD adapter](docs/OWNER_COLLECTION_GUIDE.md)
 - [Plain-English explanation and comparison with earlier attempts](docs/PLAIN_ENGLISH.md)
 - [Next steps, with evidence needed for each milestone](docs/NEXT_STEPS.md)
@@ -51,6 +54,7 @@ python3 fetch_firmware.py
 python3 fetch_port_sources.py
 python3 analyze_firmware.py
 python3 check_checksum.py
+python3 analyze_followup.py
 ```
 
 Expected: four firmware-related files match pinned hashes; all six VBF block CRCs pass; two receive arrays contain 62 records each; 10,640 checksum comparisons match. These checks concern static data and arithmetic, not vehicle behavior. See [the reproduction guide](docs/REPRODUCING.md) for Ghidra setup and decoder limitations.

@@ -1,0 +1,10 @@
+copy_record	destination	source	length	exact_copy	guards_intact
+0x11c068	0xfebf6ae4	0x57ce4	55	true	true
+0x11cbb4	0xfef23800	0x1d6278	3608	true	true
+0x11cbc0	0xfef24618	0x1d7090	3036	true	true
+
+case	flag	expected_code	input_code	branch	pass
+sample_startup_defaults	0	1	1	LMC2	true
+virtual_mismatch_zero	0	1	0	alternate	true
+virtual_nonzero_flag	1	1	0	LMC2	true
+virtual_mismatch_two	0	1	2	alternate	true

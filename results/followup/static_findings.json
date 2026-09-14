@@ -1,0 +1,440 @@
+{
+  "date": "2026-09-14",
+  "scope": "Pinned public sample; static bytes and targeted virtual checks only",
+  "firmware": [
+    {
+      "file": "NB3C-14D003-AB_block0_0x10040000.bin",
+      "cpu_base": "0x40000",
+      "sha256": "e0af7983c2650b097cbdfd8ca5ecff776dc5b1452e94394cfb155db9f230a767"
+    },
+    {
+      "file": "NB3C-14D004-AD_block0_0x101C0000.bin",
+      "cpu_base": "0x1c0000",
+      "sha256": "3f97fcdb806282eee759531d9700a3d681f79750ba74f40083a474e4076c2bab"
+    },
+    {
+      "file": "NB3C-14D007-AAB_block0_0x101D0000.bin",
+      "cpu_base": "0x1d0000",
+      "sha256": "f6054e402a5b61073418b263848de24a3bbd9b3b73a4ecf1370297957699be74"
+    }
+  ],
+  "initialization": {
+    "startup_call": "0x40098",
+    "initializer": "0xb8672",
+    "copy_function": "0xde040",
+    "record_count": 271,
+    "record_bytes": 12,
+    "selected_records": [
+      {
+        "record": "0x11c068",
+        "destination": "0xfebf6ae4",
+        "source": "0x57ce4",
+        "length": 55
+      },
+      {
+        "record": "0x11cbb4",
+        "destination": "0xfef23800",
+        "source": "0x1d6278",
+        "length": 3608
+      },
+      {
+        "record": "0x11cbc0",
+        "destination": "0xfef24618",
+        "source": "0x1d7090",
+        "length": 3036
+      }
+    ]
+  },
+  "source_selection": {
+    "function": "0xf3e34",
+    "condition": "flag != 0 OR input_code == expected_code",
+    "flag": {
+      "ram": "0xfef23886",
+      "size": 1,
+      "copy_record": "0x11cbb4",
+      "source_cpu": "0x1d62fe",
+      "value": 0,
+      "value_hex": "0x0"
+    },
+    "expected_code": {
+      "ram": "0xfef23887",
+      "size": 1,
+      "copy_record": "0x11cbb4",
+      "source_cpu": "0x1d62ff",
+      "value": 1,
+      "value_hex": "0x1"
+    },
+    "input_code": {
+      "ram": "0xfebf6b0e",
+      "size": 1,
+      "copy_record": "0x11c068",
+      "source_cpu": "0x57d0e",
+      "value": 1,
+      "value_hex": "0x1"
+    },
+    "startup_default_selects_lmc2": true,
+    "lmc2_branch": "0xf3ea0",
+    "alternate_branch": "0xf3e80",
+    "limit": "Input-source selection only; no steering permission or runtime immutability claim"
+  },
+  "getters": {
+    "selector_code": {
+      "function": "0xbd486",
+      "ram": "0xfebf6b0e",
+      "operation": "ld.bu",
+      "raw_hex": "a4072551d9fe7f00"
+    },
+    "request_mode": {
+      "function": "0xbd56e",
+      "ram": "0xfebeecfc",
+      "operation": "ld.bu",
+      "raw_hex": "a4070550ddfd7f00"
+    },
+    "additional_lmc2_flag": {
+      "function": "0xbd54e",
+      "ram": "0xfebeecf8",
+      "operation": "ld.bu",
+      "raw_hex": "a407c557dcfd7f00"
+    },
+    "curvature_rate_raw": {
+      "function": "0xbd516",
+      "ram": "0xfebeeba2",
+      "operation": "ld.hu",
+      "raw_hex": "a4076752dafd7f00"
+    },
+    "curvature_raw": {
+      "function": "0xbd526",
+      "ram": "0xfebeeba4",
+      "operation": "ld.hu",
+      "raw_hex": "a4078752dafd7f00"
+    },
+    "offset_raw": {
+      "function": "0xbd52e",
+      "ram": "0xfebeeba6",
+      "operation": "ld.hu",
+      "raw_hex": "a407a752dafd7f00"
+    },
+    "heading_raw": {
+      "function": "0xbd536",
+      "ram": "0xfebeeba8",
+      "operation": "ld.hu",
+      "raw_hex": "a407c752dafd7f00"
+    },
+    "alternate_rate_raw": {
+      "function": "0xbd51e",
+      "ram": "0xfebf6b0c",
+      "operation": "ld.hu",
+      "raw_hex": "a4070751d9fe7f00"
+    },
+    "alternate_request": {
+      "function": "0xbd576",
+      "ram": "0xfebf6b11",
+      "operation": "ld.bu",
+      "raw_hex": "a4075551d9fe7f00"
+    }
+  },
+  "validity_summary": {
+    "function": "0xbd05c",
+    "lmc2_source": "0xfebeecf9",
+    "bit": 9,
+    "mask": "0x200",
+    "application_mask_defaults": [
+      {
+        "ram": "0xfef23860",
+        "size": 4,
+        "copy_record": "0x11cbb4",
+        "source_cpu": "0x1d62d8",
+        "value": 67108864,
+        "value_hex": "0x4000000",
+        "includes_lmc2_validity_bit_9": false
+      },
+      {
+        "ram": "0xfef23868",
+        "size": 4,
+        "copy_record": "0x11cbb4",
+        "source_cpu": "0x1d62e0",
+        "value": 1095499904,
+        "value_hex": "0x414c0080",
+        "includes_lmc2_validity_bit_9": false
+      },
+      {
+        "ram": "0xfef2386c",
+        "size": 4,
+        "copy_record": "0x11cbb4",
+        "source_cpu": "0x1d62e4",
+        "value": 1364721792,
+        "value_hex": "0x51580080",
+        "includes_lmc2_validity_bit_9": false
+      },
+      {
+        "ram": "0xfef23870",
+        "size": 4,
+        "copy_record": "0x11cbb4",
+        "source_cpu": "0x1d62e8",
+        "value": 1366819328,
+        "value_hex": "0x51780200",
+        "includes_lmc2_validity_bit_9": true
+      },
+      {
+        "ram": "0xfef2461c",
+        "size": 4,
+        "copy_record": "0x11cbc0",
+        "source_cpu": "0x1d7094",
+        "value": 1074266624,
+        "value_hex": "0x40080200",
+        "includes_lmc2_validity_bit_9": true
+      }
+    ]
+  },
+  "calibration_directory": {
+    "active_pointer": "0xfebee5d0",
+    "rom_default_directory": "0x4be4c",
+    "ram_banks": [
+      "0xfebf62c4",
+      "0xfebf6388"
+    ],
+    "bank_bytes": 196,
+    "slot_27_rom_pointer": "0x1c0168",
+    "variant_records": [
+      {
+        "record": "0x4c690",
+        "mode": 0,
+        "source_slot": 2,
+        "destination_slot": 2,
+        "size_field": 52,
+        "source_rom_pointer": "0x1c0030"
+      },
+      {
+        "record": "0x4c698",
+        "mode": 0,
+        "source_slot": 31,
+        "destination_slot": 31,
+        "size_field": 2520,
+        "source_rom_pointer": "0x1c2074"
+      },
+      {
+        "record": "0x4c6a0",
+        "mode": 0,
+        "source_slot": 42,
+        "destination_slot": 42,
+        "size_field": 3924,
+        "source_rom_pointer": "0x1d0680"
+      },
+      {
+        "record": "0x4c6a8",
+        "mode": 1,
+        "source_slot": 3,
+        "destination_slot": 2,
+        "size_field": 52,
+        "source_rom_pointer": "0x1c0064"
+      },
+      {
+        "record": "0x4c6b0",
+        "mode": 1,
+        "source_slot": 32,
+        "destination_slot": 31,
+        "size_field": 2520,
+        "source_rom_pointer": "0x1c2a4c"
+      },
+      {
+        "record": "0x4c6b8",
+        "mode": 1,
+        "source_slot": 43,
+        "destination_slot": 42,
+        "size_field": 3924,
+        "source_rom_pointer": "0x1d15d4"
+      },
+      {
+        "record": "0x4c6c0",
+        "mode": 2,
+        "source_slot": 4,
+        "destination_slot": 2,
+        "size_field": 52,
+        "source_rom_pointer": "0x1c0098"
+      },
+      {
+        "record": "0x4c6c8",
+        "mode": 2,
+        "source_slot": 33,
+        "destination_slot": 31,
+        "size_field": 2520,
+        "source_rom_pointer": "0x1c3424"
+      },
+      {
+        "record": "0x4c6d0",
+        "mode": 2,
+        "source_slot": 44,
+        "destination_slot": 42,
+        "size_field": 3924,
+        "source_rom_pointer": "0x1d2528"
+      },
+      {
+        "record": "0x4c6d8",
+        "mode": 3,
+        "source_slot": 5,
+        "destination_slot": 2,
+        "size_field": 52,
+        "source_rom_pointer": "0x1c00cc"
+      },
+      {
+        "record": "0x4c6e0",
+        "mode": 3,
+        "source_slot": 34,
+        "destination_slot": 31,
+        "size_field": 2520,
+        "source_rom_pointer": "0x1c3dfc"
+      },
+      {
+        "record": "0x4c6e8",
+        "mode": 3,
+        "source_slot": 45,
+        "destination_slot": 42,
+        "size_field": 3924,
+        "source_rom_pointer": "0x1d347c"
+      },
+      {
+        "record": "0x4c6f0",
+        "mode": 4,
+        "source_slot": 6,
+        "destination_slot": 2,
+        "size_field": 52,
+        "source_rom_pointer": "0x1c0100"
+      },
+      {
+        "record": "0x4c6f8",
+        "mode": 4,
+        "source_slot": 35,
+        "destination_slot": 31,
+        "size_field": 2520,
+        "source_rom_pointer": "0x1c47d4"
+      },
+      {
+        "record": "0x4c700",
+        "mode": 4,
+        "source_slot": 46,
+        "destination_slot": 42,
+        "size_field": 3924,
+        "source_rom_pointer": "0x1d43d0"
+      },
+      {
+        "record": "0x4c708",
+        "mode": 5,
+        "source_slot": 7,
+        "destination_slot": 2,
+        "size_field": 52,
+        "source_rom_pointer": "0x1c0134"
+      },
+      {
+        "record": "0x4c710",
+        "mode": 5,
+        "source_slot": 36,
+        "destination_slot": 31,
+        "size_field": 2520,
+        "source_rom_pointer": "0x1c51ac"
+      },
+      {
+        "record": "0x4c718",
+        "mode": 5,
+        "source_slot": 47,
+        "destination_slot": 42,
+        "size_field": 3924,
+        "source_rom_pointer": "0x1d5324"
+      }
+    ],
+    "ram_override_records": [
+      {
+        "record": "0x4c720",
+        "pointer": "0xfeed8004",
+        "size_field": 48,
+        "destination_slot": 1,
+        "selection_code": 0
+      },
+      {
+        "record": "0x4c72c",
+        "pointer": "0xfeed8034",
+        "size_field": 56,
+        "destination_slot": 40,
+        "selection_code": 0
+      },
+      {
+        "record": "0x4c738",
+        "pointer": "0xfeed806c",
+        "size_field": 3924,
+        "destination_slot": 42,
+        "selection_code": 0
+      },
+      {
+        "record": "0x4c744",
+        "pointer": "0xfeed8004",
+        "size_field": 792,
+        "destination_slot": 27,
+        "selection_code": 2
+      },
+      {
+        "record": "0x4c750",
+        "pointer": "0xfeed831c",
+        "size_field": 1388,
+        "destination_slot": 38,
+        "selection_code": 2
+      },
+      {
+        "record": "0x4c75c",
+        "pointer": "0xfeed8888",
+        "size_field": 76,
+        "destination_slot": 41,
+        "selection_code": 2
+      },
+      {
+        "record": "0x4c768",
+        "pointer": "0xfeed8004",
+        "size_field": 48,
+        "destination_slot": 28,
+        "selection_code": 1
+      },
+      {
+        "record": "0x4c774",
+        "pointer": "0xfeed8034",
+        "size_field": 1604,
+        "destination_slot": 30,
+        "selection_code": 1
+      },
+      {
+        "record": "0x4c780",
+        "pointer": "0xfeed8678",
+        "size_field": 2520,
+        "destination_slot": 31,
+        "selection_code": 1
+      }
+    ],
+    "limit": "The 18-row selector leaves slot 27 alone; a separate guarded RAM override can replace it. Actual runtime state unknown."
+  },
+  "stw_instructions": [
+    {
+      "instruction": "0xd0910",
+      "raw_hex": "84074f3dcefd",
+      "source_register": 7,
+      "destination": "0xfebee5d0",
+      "architectural_store_bytes": 4
+    },
+    {
+      "instruction": "0xd0cac",
+      "raw_hex": "84074f95cefd",
+      "source_register": 18,
+      "destination": "0xfebee5d0",
+      "architectural_store_bytes": 4
+    }
+  ],
+  "timestamp": {
+    "function": "0xb773c",
+    "counter_addresses": [
+      "0xffdd8040",
+      "0xffdd8044"
+    ],
+    "conversion_cpu": "0xb7754",
+    "architectural_conversion": "CVTF.ULD",
+    "division_cpu": "0xb7762",
+    "architectural_division": "DIVF.D",
+    "divisor": 8000.0,
+    "limit": "Counter frequency unresolved; no physical timeout unit established"
+  }
+}
