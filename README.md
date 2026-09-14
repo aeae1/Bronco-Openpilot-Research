@@ -20,6 +20,7 @@ That gives us a concrete place to continue. It does not yet tell us whether the 
 
 ## Start here
 
+- [Owner guide: what to collect with FORScan and your OBD adapter](docs/OWNER_COLLECTION_GUIDE.md)
 - [Plain-English explanation and comparison with earlier attempts](docs/PLAIN_ENGLISH.md)
 - [Next steps, with evidence needed for each milestone](docs/NEXT_STEPS.md)
 - [Vehicle-information worksheet](docs/VEHICLE_INFO.md)

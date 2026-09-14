@@ -1,5 +1,7 @@
 # Read-only vehicle-information worksheet
 
+For the beginner walkthrough, equipment checklist, and explanation of what can continue without vehicle data, start with the [owner collection guide](OWNER_COLLECTION_GUIDE.md).
+
 The first useful vehicle input is identification information. A firmware file found online may describe a different steering-computer revision from the one installed in the target Bronco.
 
 Using FORScan's module-information readout, save the displayed identifiers for the modules below. Screen names vary by FORScan version. This task is limited to reading information; it does not require configuration changes, programming, actuator tests, or clearing faults. Module-information queries are read-only diagnostic requests, which are different from a purely passive network capture.

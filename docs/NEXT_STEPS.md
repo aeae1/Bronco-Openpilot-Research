@@ -4,7 +4,7 @@ Baseline: September 14, 2026. The repository records offline findings, with no v
 
 ## 1. Match the actual vehicle
 
-**Input from the owner:** a read-only module-information export for the steering computer (PSCM), windshield camera (IPMA), and gateway (GWM), plus the adapter model and vehicle configuration. Use the [worksheet](VEHICLE_INFO.md).
+**Input from the owner:** a read-only module-information export for the steering computer (PSCM), windshield camera (IPMA), and gateway (GWM), plus the adapter model and vehicle configuration. The [owner collection guide](OWNER_COLLECTION_GUIDE.md) explains how to collect it; the [worksheet](VEHICLE_INFO.md) provides a compact form. This input is not required to begin the next offline milestone.
 
 **Result needed:** a comparison of installed hardware, strategy, and calibration identifiers against the public sample. A similar part-number prefix alone is insufficient. If the firmware differs, obtain a lawfully available matching sample and repeat the structural work before carrying addresses over.
 
