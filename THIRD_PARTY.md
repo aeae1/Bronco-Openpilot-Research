@@ -26,6 +26,8 @@ No private Discord channels were accessed. No community member was contacted. Th
 
 ## Licensing scope
 
+The README banner combines a supplied Bronco illustration, generated background graphics, and Rubik Black lettering. See [artwork provenance and font licensing](assets/README.md). The MIT grant below does not relicense the supplied illustration or third-party branding.
+
 The MIT license in this repository applies to original analysis scripts, Ghidra helper scripts, and original explanatory text. It does not grant rights to third-party firmware, downloaded dependencies/source, or firmware-derived material.
 
 `results/ghidra/*.asm` and `results/ghidra/*.c` are selected disassembly and provisional decompilation excerpts derived from the public firmware sample. They are identified as third-party-derived research material, not original Ford source or material relicensed under MIT. Embedded firmware header text in the structured results is also third-party material. All third-party rights and any applicable upstream terms remain with their respective owners. No raw or modified firmware is distributed here.

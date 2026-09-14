@@ -1,5 +1,7 @@
 # Bronco openpilot research
 
+![Bronco openpilot research: the original Bronco illustration beside a sage road graphic and upright Rubik Black title](assets/readme-banner.png)
+
 Can a **2024 full-size Ford Bronco** use openpilot through Ford's factory lane-centering interface while retaining factory steering protections and independent Panda safety checks?
 
 **Status: offline research, September 14, 2026. No working vehicle port or validated installation is available here.** The full-size Bronco is absent from the [upstream Ford definitions inspected](https://github.com/commaai/opendbc/blob/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/values.py). The Bronco Sport is a different vehicle.
