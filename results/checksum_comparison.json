@@ -1,0 +1,10 @@
+{
+  "firmware_function_cpu": "0x74904",
+  "instruction_listing_sha256": "a181b92709f8908314b75aeb7403aa37fd7de4924005f6d46766931f8da3eb5b",
+  "upstream_revision": "057aee25b5eee7530f0b95b5b508c8c3247b0cd7",
+  "cases": 10640,
+  "edge_cases": 640,
+  "seed": 20260914,
+  "mismatches": 0,
+  "scope": "Integer checksum arithmetic and input-field extraction only. Does not emulate the vehicle, timing, steering application, or safety limits."
+}

@@ -1,0 +1,26 @@
+{
+  "repository": "ghostdev137/ford-pscm-re",
+  "revision": "f545afe509aa936a32ad026d411add394f8464ae",
+  "files": [
+    {
+      "source_path": "firmware/Bronco_6G/NB3C-14D003-AB.VBF",
+      "local_path": "sources/firmware/Bronco_6G/NB3C-14D003-AB.VBF",
+      "sha256": "95dc0130a581d631f926eb91ea6d5d1fdac4edaaf6cdc6774f80a3af4a139d3c"
+    },
+    {
+      "source_path": "firmware/Bronco_6G/NB3C-14D004-AD.VBF",
+      "local_path": "inputs/NB3C-14D004-AD.VBF",
+      "sha256": "00a6a6b115a2a4c2a6d6060904565e8ccfa1b0c8720ea604681743b38d547e46"
+    },
+    {
+      "source_path": "firmware/Bronco_6G/NB3C-14D007-AAB.VBF",
+      "local_path": "inputs/NB3C-14D007-AAB.VBF",
+      "sha256": "63c448fecea7af245175b4580c5c9493e787841c17aadf0748f169da4f77c6ce"
+    },
+    {
+      "source_path": "firmware/Bronco_6G/decompressed/NB3C-14D003-AB_block0_0x10040000.bin",
+      "local_path": "inputs/NB3C-14D003-AB_block0_0x10040000.bin",
+      "sha256": "e0af7983c2650b097cbdfd8ca5ecff776dc5b1452e94394cfb155db9f230a767"
+    }
+  ]
+}

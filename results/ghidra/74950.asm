@@ -1,0 +1,63 @@
+ram:00074950  prepare { r27,r28,r29,lp },0x1
+ram:00074954  mov r7,r28
+ram:00074956  zxb r28
+ram:00074958  mov r8,r29
+ram:0007495a  ld.bu -0xa3cc[gp],r14
+ram:00074960  cmp 0x1,r14
+ram:00074962  bne 0x00074976
+ram:00074964  cmp r0,r28
+ram:00074966  bne 0x00074a10
+ram:00074968  st.b r14,0x0[r8]
+ram:0007496c  st.b r0,-0xa3cc[gp]
+ram:00074972  dispose 0x1,{ r27,r28,r29,lp },[lp]
+ram:00074976  mov r6,r27
+ram:00074978  zxb r27
+ram:0007497a  ld.w -0xb364[gp],r6
+ram:00074980  mov sp,r7
+ram:00074982  jarl 0x000b77aa,lp
+ram:00074986  ld.w -0x118ac[gp],ep
+ram:0007498c  ld.w 0x0[sp],r11
+ram:00074990  sld.w 0x6c[ep],r18
+ram:00074992  ld.hu 0x1ec[r18],r18
+ram:00074996  mulu 0xa,r18,r0
+ram:0007499a  cmp r18,r11
+ram:0007499c  setfh r15
+ram:000749a0  cmp r0,r27
+ram:000749a2  bne 0x000749b6
+ram:000749a4  cmp r0,r28
+ram:000749a6  bne 0x000749b6
+ram:000749a8  cmp r0,r15
+ram:000749aa  be 0x00074a10
+ram:000749ac  mov 0x1,r10
+ram:000749ae  st.b r10,0x0[r29]
+ram:000749b2  dispose 0x1,{ r27,r28,r29,lp },[lp]
+ram:000749b6  cmp 0x1,r28
+ram:000749b8  bne 0x000749e0
+ram:000749ba  ld.w -0xb36c[gp],r6
+ram:000749c0  mov sp,r7
+ram:000749c2  jarl 0x000b77aa,lp
+ram:000749c6  ld.w -0x118ac[gp],ep
+ram:000749cc  ld.w 0x0[sp],r8
+ram:000749d0  sld.w 0x6c[ep],r17
+ram:000749d2  ld.hu 0x1e8[r17],r17
+ram:000749d6  mulu 0xa,r17,r0
+ram:000749da  cmp r17,r8
+ram:000749dc  bnh 0x00074a1a
+ram:000749de  br 0x00074a08
+ram:000749e0  cmp 0x1,r27
+ram:000749e2  bne 0x00074a10
+ram:000749e4  ld.w -0xb360[gp],r6
+ram:000749ea  mov sp,r7
+ram:000749ec  jarl 0x000b77aa,lp
+ram:000749f0  ld.w -0x118ac[gp],ep
+ram:000749f6  ld.w 0x0[sp],r6
+ram:000749fa  sld.w 0x6c[ep],r16
+ram:000749fc  ld.hu 0x1ee[r16],r16
+ram:00074a00  mulu 0xa,r16,r0
+ram:00074a04  cmp r16,r6
+ram:00074a06  bnh 0x00074a1a
+ram:00074a08  st.b r0,0x0[r29]
+ram:00074a0c  dispose 0x1,{ r27,r28,r29,lp },[lp]
+ram:00074a10  ld.bu -0xa3cb[gp],r19
+ram:00074a16  st.b r19,0x0[r29]
+ram:00074a1a  dispose 0x1,{ r27,r28,r29,lp },[lp]

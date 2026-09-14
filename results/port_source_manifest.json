@@ -1,0 +1,98 @@
+[
+  {
+    "file": "sources/upstream/opendbc/car/ford/values.py",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/values.py",
+    "bytes": 11916,
+    "sha256": "1b88ad78f772f648ca1053db6e324b7685d48f82709b714a4cfe9a6fc3417d3e"
+  },
+  {
+    "file": "sources/upstream/opendbc/car/ford/interface.py",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/interface.py",
+    "bytes": 4333,
+    "sha256": "3ab534f4ed42e2a4298cab5befe92db496bdb1eaf9cca2506b32ec8ab4f311f4"
+  },
+  {
+    "file": "sources/upstream/opendbc/car/ford/carcontroller.py",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/carcontroller.py",
+    "bytes": 9133,
+    "sha256": "fdd7b3ca3a75456fc3ab8e67ed65ce5011d327f98123294e5d23b878652f1490"
+  },
+  {
+    "file": "sources/upstream/opendbc/car/ford/fordcan.py",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/fordcan.py",
+    "bytes": 13240,
+    "sha256": "8b3c74bff68146cf9f97d17203b7deebb9254561d9591a4a92d978bf01808a75"
+  },
+  {
+    "file": "sources/upstream/opendbc/safety/modes/ford.h",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/safety/modes/ford.h",
+    "bytes": 13967,
+    "sha256": "3da94aa412bde92331e64c227832200cbc513f8a5133bf31022fdb536914b68a"
+  },
+  {
+    "file": "sources/upstream/opendbc/safety/tests/test_ford.py",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/safety/tests/test_ford.py",
+    "bytes": 28023,
+    "sha256": "ba3f1b4cb1c2958a86d9b9e5f6b24a13a0dc6e67cdf874c081bd61e9300896f5"
+  },
+  {
+    "file": "sources/upstream/opendbc/dbc/ford_lincoln_base_pt.dbc",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/dbc/ford_lincoln_base_pt.dbc",
+    "bytes": 807422,
+    "sha256": "536fe325ad4be0eeb9b1704c3663bb6518290185967eb738cf2a3b20f02804eb"
+  },
+  {
+    "file": "sources/upstream/LICENSE",
+    "url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/LICENSE",
+    "bytes": 1059,
+    "sha256": "6543c4a66b46affddae1b9ae1e1992687f0b7191e74ba3a7235388b9f42a6d13"
+  },
+  {
+    "file": "sources/mims/opendbc/car/ford/values.py",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/opendbc/car/ford/values.py",
+    "bytes": 12130,
+    "sha256": "7ce5c0b6b59b93ef871247dce9b25c6362d2f3081a8f281c969a6b43f27f889b"
+  },
+  {
+    "file": "sources/mims/opendbc/car/ford/interface.py",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/opendbc/car/ford/interface.py",
+    "bytes": 4747,
+    "sha256": "3b9e2f8ec3340b90672d69ee5b407c2720c8eb3a002976e73586e8c120d445df"
+  },
+  {
+    "file": "sources/mims/opendbc/car/ford/carcontroller.py",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/opendbc/car/ford/carcontroller.py",
+    "bytes": 10783,
+    "sha256": "340bead41f2e871a2185ca6b927bd3642b9fc12580435744858d02a0318dda92"
+  },
+  {
+    "file": "sources/mims/opendbc/car/ford/fordcan.py",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/opendbc/car/ford/fordcan.py",
+    "bytes": 14004,
+    "sha256": "a63e498e20c15f8cc3a271f9695ce253b20787bf1c5b98cf9b61bab786911287"
+  },
+  {
+    "file": "sources/mims/opendbc/safety/modes/ford.h",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/opendbc/safety/modes/ford.h",
+    "bytes": 14251,
+    "sha256": "55462a005530894979ef5724e693ce2558996567ba03fc59b5076199b75a66f9"
+  },
+  {
+    "file": "sources/mims/opendbc/safety/tests/test_ford.py",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/opendbc/safety/tests/test_ford.py",
+    "bytes": 27917,
+    "sha256": "20bd8d2304e36d0f8d78402b3a498a8b68b6711348158e93d38d6a50eba7cab9"
+  },
+  {
+    "file": "sources/mims/opendbc/dbc/ford_lincoln_base_pt.dbc",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/opendbc/dbc/ford_lincoln_base_pt.dbc",
+    "bytes": 807422,
+    "sha256": "536fe325ad4be0eeb9b1704c3663bb6518290185967eb738cf2a3b20f02804eb"
+  },
+  {
+    "file": "sources/mims/LICENSE",
+    "url": "https://raw.githubusercontent.com/mims002/opendbc/690bcf4a60d22a445e007a7766a0914d9739b8ef/LICENSE",
+    "bytes": 1059,
+    "sha256": "6543c4a66b46affddae1b9ae1e1992687f0b7191e74ba3a7235388b9f42a6d13"
+  }
+]

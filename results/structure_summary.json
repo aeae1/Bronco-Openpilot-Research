@@ -1,0 +1,74 @@
+{
+  "files": 3,
+  "blocks": 6,
+  "all_block_crcs_pass": true,
+  "receive_table_lengths": [
+    62,
+    62
+  ],
+  "receive_routes": [
+    {
+      "can_id": "0x3d7",
+      "canif_pdu_id": 30,
+      "pdur_route": 50,
+      "destination_index": 59,
+      "destination_pdu_id": 32,
+      "callback": "0x8fa06",
+      "com_config_address": "0x45078",
+      "com_config_raw": "06 01 fe 00 01 01 1c 5f 57 1d 1c 00",
+      "callout_enabled": 1,
+      "callout": "0x6aa2a",
+      "deferred_buffer_offset": 254,
+      "deferred_copy_length": 8
+    },
+    {
+      "can_id": "0x3d6",
+      "canif_pdu_id": 23,
+      "pdur_route": 31,
+      "destination_index": 53,
+      "destination_pdu_id": 26,
+      "callback": "0x8fa06",
+      "com_config_address": "0x45030",
+      "com_config_raw": "d6 00 ce 00 01 01 16 4e 44 17 16 00",
+      "callout_enabled": 1,
+      "callout": "0x6aa00",
+      "deferred_buffer_offset": 206,
+      "deferred_copy_length": 8
+    },
+    {
+      "can_id": "0x3ca",
+      "canif_pdu_id": 22,
+      "pdur_route": 22,
+      "destination_index": 52,
+      "destination_pdu_id": 25,
+      "callback": "0x8fa06",
+      "com_config_address": "0x45024",
+      "com_config_raw": "ce 00 c6 00 01 01 15 44 3d 16 15 00",
+      "callout_enabled": 1,
+      "callout": "0x6a9f6",
+      "deferred_buffer_offset": 198,
+      "deferred_copy_length": 8
+    },
+    {
+      "can_id": "0x230",
+      "canif_pdu_id": 39,
+      "pdur_route": 55,
+      "destination_index": 68,
+      "destination_pdu_id": 41,
+      "callback": "0x8fa06",
+      "com_config_address": "0x450e4",
+      "com_config_raw": "4e 01 46 01 01 01 25 7a 79 26 25 00",
+      "callout_enabled": 1,
+      "callout": "0x6ac00",
+      "deferred_buffer_offset": 326,
+      "deferred_copy_length": 8
+    }
+  ],
+  "differing_table_slots": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ]
+}
