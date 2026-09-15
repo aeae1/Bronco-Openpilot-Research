@@ -27,6 +27,7 @@ That gives us a concrete place to continue. The owner's connected-session identi
 ## Start here
 
 - [FORScan findings: confirmed identifiers, displayed network groups, and download failures](docs/FORSCAN_FINDINGS.md)
+- [BluePilot source review: signal limits, firmware-analysis leads, and safety distinctions](docs/BLUEPILOT_SOURCE_REVIEW.md)
 - [Owner As-Built findings and exact firmware-file request](docs/ASBUILT_FINDINGS.md)
 - [Gateway firmware search: acquired files, limits, and useful owner downloads](docs/FIRMWARE_ACQUISITION.md)
 - [New findings: application consumers, startup selection, and remaining gates](docs/POST_VALIDATION_FINDINGS.md)
