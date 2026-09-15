@@ -24,8 +24,11 @@ That gives us a concrete place to continue. The owner's connected-session identi
 
 **New follow-up:** the trace now reaches application code that consumes LMC2 path data. The sample's startup defaults select its LMC2 input branch, confirmed by targeted virtual-memory checks. Its validity state also participates in broader application status checks. Read [the new findings and their limits](docs/POST_VALIDATION_FINDINGS.md). Selecting an input source is still separate from permitting steering.
 
+**September 15 Discord follow-up:** a read-only review of 275 Bronco search results and original test discussions found reported intermittent LKA steering, direct-bus LMC2 attempts with unresolved wiring/timing conditions, and later harness proposals without a validated solution. No matching owner firmware files were obtained. The existing BluePilot safety-code concern remains unresolved. [Read the dated evidence, source links, and next steps](docs/DISCORD_FORD_REVIEW.md).
+
 ## Start here
 
+- [Discord Ford review: earlier tests, gateway uncertainty, keepalive questions, and exact firmware search](docs/DISCORD_FORD_REVIEW.md)
 - [FORScan findings: confirmed identifiers, displayed network groups, and download failures](docs/FORSCAN_FINDINGS.md)
 - [Full BluePilot website review: 34 archive entries, Bronco claims, and independent source checks](docs/BLUEPILOT_SITE_REVIEW.md)
 - [BluePilot source review: signal limits, firmware-analysis leads, and safety distinctions](docs/BLUEPILOT_SOURCE_REVIEW.md)
@@ -66,4 +69,4 @@ python3 analyze_followup.py
 
 Expected: four firmware-related files match pinned hashes; all six VBF block CRCs pass; two receive arrays contain 62 records each; 10,640 checksum comparisons match. These checks concern static data and arithmetic, not vehicle behavior. See [the reproduction guide](docs/REPRODUCING.md) for Ghidra setup and decoder limitations.
 
-The initial investigation was prepared with ChatGPT/Codex for the repository owner. It builds on public work by ghostdev137, comma contributors, mims002, and developers documenting Bronco experiments. Independent findings here do not establish that nobody has made the same findings privately. Private Discord channels were not inspected.
+The initial investigation was prepared with ChatGPT/Codex for the repository owner. It builds on public work by ghostdev137, comma contributors, mims002, and developers documenting Bronco experiments. Independent findings here do not establish that nobody has made the same findings privately. The initial public-source investigation did not inspect Discord. The September 15 follow-up reviewed the signed-in comma.ai #ford channel; only paraphrased findings and source links are included here.

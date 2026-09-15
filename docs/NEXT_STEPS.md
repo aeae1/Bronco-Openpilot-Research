@@ -1,6 +1,6 @@
 # Next steps
 
-Baseline: September 14, 2026. The repository records offline findings, with no verified vehicle port. Keep this plan tied to evidence rather than assuming LMC2 reception automatically permits steering.
+Baseline: September 14, 2026; updated September 15 with [read-only Discord findings](DISCORD_FORD_REVIEW.md). The repository records offline findings, with no verified vehicle port. Keep this plan tied to evidence rather than assuming LMC2 reception automatically permits steering.
 
 ## 1. Match the actual vehicle
 
@@ -31,7 +31,9 @@ This can happen alongside the next offline milestone.
 
 **Result needed:** evidence that distinguishes a message present near the camera, absent after the gateway, and present at the steering computer. Record firmware/configuration identities, capture location, protocol, timing, and any observed faults with the data. A capture cannot establish acceptance solely because the message is visible.
 
-Earlier developers reported gateway blocking and direct-rack network-termination trouble. Those are concrete issues to revisit with accurate topology and passive measurements; they are not proof that the steering application rejected correctly delivered requests.
+The [January 2024 Discord context](DISCORD_FORD_REVIEW.md#what-the-earlier-attempts-demonstrated) adds bus reassignment and a stale-send error. February reports describe LMC1 crossing the gateway and direct-bus LMC2 attempts; the original tester's May 2026 follow-up adds uncertainty about improvised wiring. These reports do not establish that correctly delivered LMC2 was rejected by the steering application. The previously documented June 27 gateway-blocking and termination report remains relevant. Later custom-harness proposals do not supply a validated gateway solution.
+
+**Immediate offline task:** reconstruct the earlier software profile, transmit bus, Panda policy/build, send timestamps, and physical receive evidence from existing shareable material. Separate routing, stale transmission, LKA availability loss, wakeup, and steering permission. No successful Bronco-specific keepalive fix was established by the inspected discussion. Preserve freshness and watchdog checks while investigating their inputs.
 
 ## 4. Evaluate feasibility on a controlled bench
 
@@ -47,10 +49,10 @@ Create an opendbc fork when a specific, supported-by-evidence change is ready. A
 
 The implementation would need accurate vehicle identification and geometry (including two-door versus four-door), a verified message path and controller, independent Panda enforcement, normal driver override/disengagement, and demonstrated fault handling. The intended initial control scope is lateral assistance with factory ACC retained, if the architecture allows it.
 
-**Result needed before considering driving:** a reviewed implementation with meaningful safety-policy tests and appropriate bench/integration evidence. No installation or road-use release is currently scheduled.
+**Result needed before considering driving:** a reviewed implementation with meaningful safety-policy tests and appropriate bench/integration evidence. The [existing BluePilot control-permission finding](BLUEPILOT_SITE_REVIEW.md#independent-safety-code-check) remains a separate unresolved gate; the inspected development revision was unchanged in this follow-up. Tie any proposed implementation to its actual Panda build and verify controls-disabled, reset, stale-input, disengagement, and driver-override behavior. No installation or road-use release is currently scheduled.
 
 ## When the direction would change
 
 If the matched steering firmware lacks a usable factory path, or the application requires defeating protections to use it, document that limitation. It is a valid research outcome. Conversely, an unexplained gateway failure or unknown enable condition alone does not establish that the platform is permanently locked down.
 
-Public source updates and any owner-supplied Discord material can refine this plan. Preserve revision IDs and distinguish observed behavior, source-code interpretation, and hypotheses in each update.
+Public source updates and further authorized, read-only Discord review can refine this plan. Preserve revision IDs and distinguish observed behavior, source-code interpretation, and hypotheses in each update.

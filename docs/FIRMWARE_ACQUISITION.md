@@ -6,6 +6,14 @@ Research continued September 14–15, 2026. Status checked September 15, 2026.
 
 **No executable firmware matched to the owner's Bronco gateway has been obtained.** Eight additional public files have been downloaded and checked for offline comparison: camera and steering firmware from other Ford vehicles, plus gateway and camera diagnostic definitions. None is established as software installed in the owner's 2024 full-size Bronco.
 
+## September 15 Discord and exact-identifier follow-up
+
+The [new dated review](DISCORD_FORD_REVIEW.md#exact-firmware-acquisition-status) searched each of the five FORScan-confirmed identifiers in comma.ai #ford, public GitHub code search, and indexed web results. No matching firmware file or Bronco-specific manifest was obtained. The failed public calibration-portal filename attempts were not repeated.
+
+`RB3C-14D003-AA` appears in the [pinned upstream Ranger MK2 diagnostic fingerprints](https://github.com/commaai/opendbc/blob/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/fingerprints.py). That is an identification/provenance lead, not firmware or evidence of matching calibration. Searches did not establish file sources for `MB3T-14H483-FAH`, `NB3V-14D004-BF`, `M2DT-14F397-AH`, or `M2DT-14F398-AH`.
+
+Ford's [official service-software distribution page](https://www.fordtechservice.dealerconnection.com/Rotunda/MCSIDSDownloadSoftware) supplies FDRS software but does not establish availability of these exact historical packages. An existing, lawfully obtained module package or sanitized FDRS manifest remains the concrete acquisition lead. No paid access, account sharing, programming session, or new vehicle scan was initiated. The comparison source was rechecked and still does not provide the exact requested filenames.
+
 ## What is available now
 
 The existing Bronco steering set remains `NB3C-14D003-AB`, `NB3C-14D004-AD`, and `NB3C-14D007-AAB`, documented in [the original investigation](FIRMWARE_INVESTIGATION.md).
