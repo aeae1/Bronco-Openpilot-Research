@@ -15,6 +15,10 @@ Individual file hashes and URLs are recorded in [firmware_download_manifest.json
 
 Raw firmware and retrieved third-party source are downloaded on demand and ignored by git. Availability at a public URL does not authenticate firmware as a Ford-approved release or establish compatibility with the target vehicle.
 
+Additional camera, F-150 steering, and Transit Custom diagnostic-reference files use the same pinned `ghostdev137/ford-pscm-re` revision. Their hashes and paths appear in [module_firmware_manifest.json](module_firmware_manifest.json), with derived structure/checksum results in [the module inventory](results/module_firmware_inventory.json). These comparison materials are not matched to the owner's installed modules. The gateway MDX is a diagnostic definition, not executable code.
+
+The gateway search consulted [incognitojam/op-notebooks at revision 1109fbdb](https://github.com/incognitojam/op-notebooks/tree/1109fbdb25e3bdb7bfb7033a56bba7338bb60688), specifically its download workflow and historical VBF inventory. The documented Ford endpoint returned server-error content on both attempts; no firmware was obtained there. Its separate As-Built script was inspected but not run, and its embedded session/CAPTCHA values were not used. See [acquisition findings](docs/FIRMWARE_ACQUISITION.md).
+
 The follow-up also uses the [Renesas-authored RH850G3M software manual](https://docs.alexrp.com/v850/rh850g3m.pdf), R01US0123EJ0140 Rev.1.40, pages 314, 386, and 392. That copy is hosted on a third-party mirror. Its instruction definitions do not identify the Bronco's exact processor model. The narrow Ghidra language correction and hashes are documented in [the follow-up report](docs/POST_VALIDATION_FINDINGS.md).
 
 ## Development history

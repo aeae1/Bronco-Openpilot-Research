@@ -24,6 +24,7 @@ That gives us a concrete place to continue. It does not yet tell us whether the 
 
 ## Start here
 
+- [Gateway firmware search: acquired files, limits, and useful owner downloads](docs/FIRMWARE_ACQUISITION.md)
 - [New findings: application consumers, startup selection, and remaining gates](docs/POST_VALIDATION_FINDINGS.md)
 - [Owner guide: what to collect with FORScan and your OBD adapter](docs/OWNER_COLLECTION_GUIDE.md)
 - [Plain-English explanation and comparison with earlier attempts](docs/PLAIN_ENGLISH.md)

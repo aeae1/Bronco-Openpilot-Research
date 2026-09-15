@@ -1,0 +1,315 @@
+{
+  "research_date": "2026-09-15",
+  "summary": {
+    "files": 8,
+    "vbf_containers": 6,
+    "vbf_blocks": 9,
+    "all_pinned_hashes_match": true,
+    "all_vbf_checksums_match": true,
+    "gateway_executable_acquired": false,
+    "owner_module_firmware_match_established": false
+  },
+  "limits": "Integrity checks do not authenticate Ford signatures, identify the owner's installed software, or establish vehicle behavior or safety.",
+  "files": [
+    {
+      "filename": "ML34-14D004-EP.VBF",
+      "module": "PSCM",
+      "source_vehicle_attribution": "2021 F-150 Lariat BlueCruise, according to the source inventory",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/F150_2021_Lariat_BlueCruise/ML34-14D004-EP.VBF",
+      "bytes": 66332,
+      "sha256": "63685ed04d84a7a9b917fc6be4368583b1b4b35fee66815449fa4b5142772cbd",
+      "git_blob_sha1": "a339db2305f471fb6ca7548d43e3131bcf82bb18",
+      "kind": "vbf",
+      "header_bytes": 1500,
+      "software_part_number": "ML34-14D004-EP",
+      "software_part_type": "DATA",
+      "description_lines": [
+        "Ford Software",
+        "Unsigned"
+      ],
+      "ecu_address": "0x730",
+      "frame_format": "CAN_STANDARD",
+      "data_format_identifier": 0,
+      "file_crc32_stored": "0x06D9A00D",
+      "file_crc32_computed": "0x06D9A00D",
+      "file_crc32_matches": true,
+      "blocks": [
+        {
+          "address": "0x101C0000",
+          "bytes": 64512,
+          "crc16_stored": "0xA3F9",
+          "crc16_computed": "0xA3F9",
+          "crc16_matches": true,
+          "sha256": "9fb3ef4660834c75e535a4821fad13ba2e807be4e43074cd266b3f1c9b02cb15"
+        },
+        {
+          "address": "0x101CFC00",
+          "bytes": 300,
+          "crc16_stored": "0x2D88",
+          "crc16_computed": "0x2D88",
+          "crc16_matches": true,
+          "sha256": "0bd8aa1772eac67424ce3c135bf119d4630cedf5cfe4e1489d02dad7410aa1ff"
+        }
+      ],
+      "cryptographic_signature_verified": false
+    },
+    {
+      "filename": "ML34-14D007-EDL.VBF",
+      "module": "PSCM",
+      "source_vehicle_attribution": "2021 F-150 Lariat BlueCruise, according to the source inventory",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/F150_2021_Lariat_BlueCruise/ML34-14D007-EDL.VBF",
+      "bytes": 197409,
+      "sha256": "2d38d9e3c4e50b904a732f0f080e66a2e3d83f33fa5bc28a0fedee66ea80a314",
+      "git_blob_sha1": "b8b2d36055ab7da5f608680b6199dffca9c2b5c7",
+      "kind": "vbf",
+      "header_bytes": 1505,
+      "software_part_number": "ML34-14D007-EDL",
+      "software_part_type": "DATA",
+      "description_lines": [
+        "Production Signed VBU",
+        "T3T6"
+      ],
+      "ecu_address": "0x730",
+      "frame_format": "CAN_STANDARD",
+      "data_format_identifier": 0,
+      "file_crc32_stored": "0xA95DEAB1",
+      "file_crc32_computed": "0xA95DEAB1",
+      "file_crc32_matches": true,
+      "blocks": [
+        {
+          "address": "0x101D0000",
+          "bytes": 195584,
+          "crc16_stored": "0xF37A",
+          "crc16_computed": "0xF37A",
+          "crc16_matches": true,
+          "sha256": "3cc28ac2cc31f34d559846b9996e6aa0fc33beba4e779ef4667f0f7ad76fe1c5"
+        },
+        {
+          "address": "0x101FFC00",
+          "bytes": 300,
+          "crc16_stored": "0x56D0",
+          "crc16_computed": "0x56D0",
+          "crc16_matches": true,
+          "sha256": "364da6c6dd380973bbfa65ff01a23006bb87bb72b6652fab4f7c5cdb8c02c6c9"
+        }
+      ],
+      "cryptographic_signature_verified": false
+    },
+    {
+      "filename": "ML3V-14D003-BD.VBF",
+      "module": "PSCM",
+      "source_vehicle_attribution": "2021 F-150 Lariat BlueCruise, according to the source inventory",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/F150_2021_Lariat_BlueCruise/ML3V-14D003-BD.VBF",
+      "bytes": 1573660,
+      "sha256": "8784d6597a1110a26a82427792fad1331295014a55f7d95377e5a65cfeda246c",
+      "git_blob_sha1": "04d961b3f90e2d73b02d5d6de9c8d3291f58f360",
+      "kind": "vbf",
+      "header_bytes": 1500,
+      "software_part_number": "ML3V-14D003-BD",
+      "software_part_type": "EXE",
+      "description_lines": [
+        "Ford Software",
+        "Unsigned"
+      ],
+      "ecu_address": "0x730",
+      "frame_format": "CAN_STANDARD",
+      "data_format_identifier": 0,
+      "file_crc32_stored": "0x8DF103F0",
+      "file_crc32_computed": "0x8DF103F0",
+      "file_crc32_matches": true,
+      "blocks": [
+        {
+          "address": "0x10040000",
+          "bytes": 1571840,
+          "crc16_stored": "0xBB7A",
+          "crc16_computed": "0xBB7A",
+          "crc16_matches": true,
+          "sha256": "40692db98c5c72e3207a51dd28c0ca5ef284417c72ea60f3fff855e91c653f88"
+        },
+        {
+          "address": "0x101BFC00",
+          "bytes": 300,
+          "crc16_stored": "0xE1C9",
+          "crc16_computed": "0xE1C9",
+          "crc16_matches": true,
+          "sha256": "0b5d198beef3ac0369f38c3218ef57bf73e5fbba38f060dfa2832dba49c0cfea"
+        }
+      ],
+      "cryptographic_signature_verified": false
+    },
+    {
+      "filename": "H1BT-14F399-AB.VBF",
+      "module": "IPMA",
+      "source_vehicle_attribution": "Transit_2025 public collection; exact donor vehicle unverified",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/Transit_2025/H1BT-14F399-AB.VBF",
+      "bytes": 9770,
+      "sha256": "763c42b0cd4afbfef375bb2aa558384610f6ca1f843e07f79cf95ea3f1a0df12",
+      "git_blob_sha1": "80fc3a6d932972e6c9c7c4f7dd6c5b901aa0849c",
+      "kind": "vbf",
+      "header_bytes": 696,
+      "software_part_number": "H1BT-14F399-AB",
+      "software_part_type": "SBL",
+      "description_lines": [
+        "Flash Driver for RH850"
+      ],
+      "ecu_address": "0x706",
+      "frame_format": "CAN_STANDARD",
+      "data_format_identifier": 0,
+      "file_crc32_stored": "0x0AA06A46",
+      "file_crc32_computed": "0x0AA06A46",
+      "file_crc32_matches": true,
+      "blocks": [
+        {
+          "address": "0xFEBD0000",
+          "bytes": 9064,
+          "crc16_stored": "0xE708",
+          "crc16_computed": "0xE708",
+          "crc16_matches": true,
+          "sha256": "6dc76a4252a5078a89fb415f9956a89d7eaa49c8f7f00f643d9c35e38d37d963"
+        }
+      ],
+      "cryptographic_signature_verified": false
+    },
+    {
+      "filename": "NK3T-14F397-AB.VBF",
+      "module": "IPMA",
+      "source_vehicle_attribution": "Transit_2025 public collection; exact donor vehicle unverified",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/Transit_2025/NK3T-14F397-AB.VBF",
+      "bytes": 2622174,
+      "sha256": "414ef86dc4f10eefc4c30993300e06166f4d4931dc64d8bfa95e388947331319",
+      "git_blob_sha1": "cca673d12eba260dc130020756e860a52b5bf4cc",
+      "kind": "vbf",
+      "header_bytes": 724,
+      "software_part_number": "NK3T-14F397-AB",
+      "software_part_type": "EXE",
+      "description_lines": [
+        "Application for RH850"
+      ],
+      "ecu_address": "0x706",
+      "frame_format": "CAN_STANDARD",
+      "data_format_identifier": 0,
+      "file_crc32_stored": "0x9CE505CF",
+      "file_crc32_computed": "0x9CE505CF",
+      "file_crc32_matches": true,
+      "blocks": [
+        {
+          "address": "0x00010000",
+          "bytes": 2621440,
+          "crc16_stored": "0x2A53",
+          "crc16_computed": "0x2A53",
+          "crc16_matches": true,
+          "sha256": "ef0aaea01fb87ae6abe692a81e82cc0443770b6079bd5f1117c00fbfdccbab62"
+        }
+      ],
+      "cryptographic_signature_verified": false
+    },
+    {
+      "filename": "NK3T-14F398-AC.VBF",
+      "module": "IPMA",
+      "source_vehicle_attribution": "Transit_2025 public collection; exact donor vehicle unverified",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/Transit_2025/NK3T-14F398-AC.VBF",
+      "bytes": 426797,
+      "sha256": "ddaf9908977f0b7228493b72570973d16e57060d77784e34a215c8b8efd60585",
+      "git_blob_sha1": "9b1036816f5a3fa1879d994df2a0f83baf6039a7",
+      "kind": "vbf",
+      "header_bytes": 803,
+      "software_part_number": "NK3T-14F398-AC",
+      "software_part_type": "DATA",
+      "description_lines": [
+        "Calibration for RH850"
+      ],
+      "ecu_address": "0x706",
+      "frame_format": "CAN_STANDARD",
+      "data_format_identifier": 0,
+      "file_crc32_stored": "0x983CBC4B",
+      "file_crc32_computed": "0x983CBC4B",
+      "file_crc32_matches": true,
+      "blocks": [
+        {
+          "address": "0x00290000",
+          "bytes": 425984,
+          "crc16_stored": "0xDE46",
+          "crc16_computed": "0xDE46",
+          "crc16_matches": true,
+          "sha256": "8db3503ae503968bdbb24e4f36c3cd89807b1685db0ede54db2d902d584de0fd"
+        }
+      ],
+      "cryptographic_signature_verified": false
+    },
+    {
+      "filename": "706_IPMA.xml",
+      "module": "IPMA",
+      "source_vehicle_attribution": "2025 Transit Custom session, according to the source inventory",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/Transit_2025/diagnostics/706_IPMA.xml",
+      "bytes": 2044442,
+      "sha256": "7d3a0c1128771f9968e5fc107835b0b8b1846bb073b3cf18cea4046d17be8a8f",
+      "git_blob_sha1": "731fcbefa1e30253c2516b79b0e1549e6c0a3b1f",
+      "kind": "diagnostic_definition",
+      "mdx_uid": "G2427628",
+      "mdx_version": "4.0",
+      "did_definition_count": 322,
+      "identity_field_definitions": [
+        {
+          "identifier": "0xF111",
+          "label": "ECU Core Assembly Number",
+          "bytes": 24
+        },
+        {
+          "identifier": "0xF113",
+          "label": "ECU Delivery Assembly Number",
+          "bytes": 24
+        },
+        {
+          "identifier": "0xF124",
+          "label": "ECU Calibration Data #1 Number",
+          "bytes": 24
+        },
+        {
+          "identifier": "0xF188",
+          "label": "Vehicle Manufacturer ECU Software Number",
+          "bytes": 24
+        }
+      ],
+      "limits": "Definitions, not responses from a vehicle; not executable firmware."
+    },
+    {
+      "filename": "716_GWM.xml",
+      "module": "GWM",
+      "source_vehicle_attribution": "2025 Transit Custom session, according to the source inventory",
+      "owner_vehicle_match": "not established",
+      "source_url": "https://raw.githubusercontent.com/ghostdev137/ford-pscm-re/f545afe509aa936a32ad026d411add394f8464ae/firmware/Transit_2025/diagnostics/716_GWM.xml",
+      "bytes": 2946010,
+      "sha256": "e7336e752c8bf73d1c8c9cfda405beeb79ff8c7e37fd8c926f20bc029c0b8b57",
+      "git_blob_sha1": "9b480f4ae89906c227f5bf07ea9240ca0f62ec7a",
+      "kind": "diagnostic_definition",
+      "mdx_uid": "G2472482",
+      "mdx_version": "4.0",
+      "did_definition_count": 209,
+      "identity_field_definitions": [
+        {
+          "identifier": "0xF111",
+          "label": "ECU Core Assembly Number",
+          "bytes": 24
+        },
+        {
+          "identifier": "0xF113",
+          "label": "ECU Delivery Assembly Number",
+          "bytes": 24
+        },
+        {
+          "identifier": "0xF188",
+          "label": "Vehicle Manufacturer ECU Software Number",
+          "bytes": 24
+        }
+      ],
+      "limits": "Definitions, not responses from a vehicle; not executable firmware."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 Prepared September 14, 2026, for the 2024 full-size Bronco investigation.
 
-**You do not need to collect anything before the offline research can continue.** The public firmware is already available and analyzed. Your information helps determine how that research applies to the computers actually installed in your Bronco.
+**You do not need to collect anything before the offline research can continue.** The public steering firmware is already available and analyzed. Your information helps determine how that research applies to the computers actually installed in your Bronco. A matched gateway executable remains missing; see [the firmware acquisition status](FIRMWARE_ACQUISITION.md).
 
 The first collection is identification only. No firmware dump, programming, vehicle disassembly, or driving experiment is needed.
 
@@ -20,6 +20,14 @@ Send these in our chat. Photos or screenshots are enough; you do not need to int
 | Vehicle details | Confirm year, two/four doors, trim, engine, factory adaptive cruise, and known relevant modifications or module updates. | Avoids applying conclusions from a different configuration. |
 
 **If you only have time for one thing now, send the adapter photo and FORScan version.** If you already have module screenshots, send those first and include their date. A partial packet is useful. “Unknown” is fine for update history; no dealer visit is needed to fill that in.
+
+## If you have BlueDriver available now
+
+The owner's pictured adapter is a BlueDriver. It can provide a preliminary fault report through its own app: use **Read Codes**, save/share the report, and send any vehicle/module information screens offered. Include module headings and complete codes where available. Leave **Clear Codes** alone to preserve the existing history. BlueDriver's published app description includes Ford enhanced diagnostics and saved/shared reports. [Developer's feature description](https://play.google.com/store/apps/details?id=com.lemurmonitors.bluedriver&hl=en_US).
+
+A fault scan is not a firmware dump. BlueDriver's [Vehicle Identification documentation](https://support.bluedriver.com/en/articles/15108431-vehicle-identification) describes VIN-based identification; it does not establish that the app exposes the GWM/PSCM/IPMA software/calibration identifiers needed here. If those fields are absent, send what you have and collect specific module identification with a compatible FORScan adapter later. Do not spend time trying to make BlueDriver act as an ELM327 adapter. Neither a fault report nor an adapter purchase is required for offline research to continue.
+
+The owner's VIN also enables an attempt to obtain Ford's factory As-Built record. That lookup currently fails from this environment; an owner download may help before the scanner is available. Existing Ford update files or module-specific package lists are also useful. See [the exact download guidance](FIRMWARE_ACQUISITION.md#vin-and-as-built-lookup). Do not start a vehicle update merely to obtain research inputs.
 
 ## Before connecting
 
