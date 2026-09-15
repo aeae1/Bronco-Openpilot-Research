@@ -1,5 +1,7 @@
 # BluePilot research relevant to the Bronco investigation
 
+**Follow-up:** the [full website review](BLUEPILOT_SITE_REVIEW.md) covers all 34 archive entries, the Bronco-specific interceptor table, current source-code checks, and a host-tested control-permission concern. The inspected BluePilot branch is not recommended as meeting this project's retained-protection requirement.
+
 Reviewed September 15, 2026, after the owner supplied the January article. These are external developer reports and research leads, separate from this repository's binary checks. No vehicle operation, firmware modification, or change to independent safety checks is proposed here.
 
 ## January signal-limit experiments

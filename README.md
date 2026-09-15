@@ -27,6 +27,7 @@ That gives us a concrete place to continue. The owner's connected-session identi
 ## Start here
 
 - [FORScan findings: confirmed identifiers, displayed network groups, and download failures](docs/FORSCAN_FINDINGS.md)
+- [Full BluePilot website review: 34 archive entries, Bronco claims, and independent source checks](docs/BLUEPILOT_SITE_REVIEW.md)
 - [BluePilot source review: signal limits, firmware-analysis leads, and safety distinctions](docs/BLUEPILOT_SOURCE_REVIEW.md)
 - [Owner As-Built findings and exact firmware-file request](docs/ASBUILT_FINDINGS.md)
 - [Gateway firmware search: acquired files, limits, and useful owner downloads](docs/FIRMWARE_ACQUISITION.md)

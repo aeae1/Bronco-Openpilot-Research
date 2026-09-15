@@ -1,0 +1,253 @@
+{
+  "review_date": "2026-09-15",
+  "archive_pages": 4,
+  "archive_entry_count": 34,
+  "scope": "Live site navigation and all listed archive entries; article text read using browser-rendered content and public page extraction. Embedded videos were identified, not comprehensively reviewed. No authenticated Discord history included.",
+  "other_pages": [
+    "https://bluepilot.dev/",
+    "https://bluepilot.dev/FAQ/",
+    "https://bluepilot.dev/lightning-coupler-order-page/",
+    "https://bluepilot.dev/dock-order-page/"
+  ],
+  "entries": [
+    {
+      "title": "BluePilot 7.0 is Now Live",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-7-0-is-now-live",
+      "displayed_publication_date": "2026-07-17",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot 7.0 – The Return of Angle Control (it wasn’t the model’s fault)",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-7-0-the-return-of-angle-control-it-wasnt-the-models-fault",
+      "displayed_publication_date": "2026-07-15",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "A word on the safety of a torque interceptor",
+      "url": "https://bluepilot.dev/announcements/?post=a-word-on-the-safety-of-a-torque-interceptor",
+      "displayed_publication_date": "2026-06-17",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Bypassing the Ford PSCM: first look at a Ford Torque Interceptor",
+      "url": "https://bluepilot.dev/announcements/?post=bypassing-the-ford-pscm-a-first-look-at-a-ford-torque-interceptor",
+      "displayed_publication_date": "2026-06-16",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Ford LKA OpenPilot Progress",
+      "url": "https://bluepilot.dev/announcements/?post=ford-lka-openpilot-progress",
+      "displayed_publication_date": "2026-04-27",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "The Beginner’s Guide to BluePilot on Ford Vehicles",
+      "url": "https://bluepilot.dev/announcements/?post=the-beginners-guide-to-bluepilot-on-ford-vehicles",
+      "displayed_publication_date": "2026-03-26",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot 6.0 has Exited Beta Testing and is Now Available for General Use",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-6-0-has-exited-beta-testing-and-is-now-available-for-general-use",
+      "displayed_publication_date": "2026-03-21",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot Most Frequently Reccomended Settings",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-most-frequently-reccomended-settings",
+      "displayed_publication_date": "2026-03-19",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot 6.0 is Now in Open Beta (Updated 03.05.2026)",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-6-0-is-now-in-open-beta",
+      "displayed_publication_date": "2026-02-28",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot Specific Parameters and Tuning",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-specific-parameters-and-tuning",
+      "displayed_publication_date": "2026-02-28",
+      "archive_page": 1,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Thoughts on Ford Longitudinal Control (Adaptive Cruise Control)",
+      "url": "https://bluepilot.dev/announcements/?post=thoughts-on-ford-longitudinal-control-adaptive-cruise-control",
+      "displayed_publication_date": "2026-02-23",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Red Lights, Traffic Jams and ADAS Limitations",
+      "url": "https://bluepilot.dev/announcements/?post=red-lights-traffic-jams-and-adas-limitations",
+      "displayed_publication_date": "2026-02-19",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "What Exactly are the limits of Ford Lane Assist Signals",
+      "url": "https://bluepilot.dev/announcements/?post=what-exactly-are-the-limits-of-ford-lane-assist-signals",
+      "displayed_publication_date": "2026-01-07",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot on the Comma4",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-on-the-comma4",
+      "displayed_publication_date": "2025-12-17",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot 5.0 Release Announcement",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-5-0-release-announcement",
+      "displayed_publication_date": "2025-11-25",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Documenting Ford CANFD ADAS Lateral Control (Lane Keeping, Lane Centering, BlueCruise)",
+      "url": "https://bluepilot.dev/announcements/?post=understanding-the-ford-canfd-adas-lateral-control-lane-keeping-lane-centering-bluecruise",
+      "displayed_publication_date": "2025-11-11",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot Dock Install and Maintenance",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-dock-install-and-maintenance",
+      "displayed_publication_date": "2025-11-06",
+      "archive_page": 2,
+      "review": "video_embed_identified_not_watched"
+    },
+    {
+      "title": "BluePilot 5.0 Beta Release",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-5-0-beta-release",
+      "displayed_publication_date": "2025-10-28",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "I installed BluePilot but when I crank my vehicle nothing happens or I get a canbus error and alerts on my dash",
+      "url": "https://bluepilot.dev/announcements/?post=i-installed-bluepilot-but-when-i-crank-my-vehicle-nothing-happens-or-i-get-a-canbus-error-and-alerts-on-my-dash",
+      "displayed_publication_date": "2025-08-15",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "CANFD Installation Video Links",
+      "url": "https://bluepilot.dev/announcements/?post=canfd-installation-video-links",
+      "displayed_publication_date": "2025-08-15",
+      "archive_page": 2,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Confirmed TRON Status List",
+      "url": "https://bluepilot.dev/announcements/?post=confirmed-tron-status-list",
+      "displayed_publication_date": "2025-08-13",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "I Cannot Modify A Setting or Certain Settings are Greyed Out",
+      "url": "https://bluepilot.dev/announcements/?post=i-cannot-modify-a-setting-or-certain-settings-are-greyed-out",
+      "displayed_publication_date": "2025-08-10",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "On my CANFD Ford I Occasionally Get Radar Errors when using bp-3.x or 4.x",
+      "url": "https://bluepilot.dev/announcements/?post=on-my-canfd-ford-i-occasionally-get-radar-errors-when-using-bp-3-x-or-newer",
+      "displayed_publication_date": "2025-08-09",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "On BluePilot 4.0 I Cannot Switch Models / The Only Model Available is Tomb Raider",
+      "url": "https://bluepilot.dev/announcements/?post=on-bluepilot-4-0-i-cannot-switch-models-the-only-model-available-is-tomb-raider",
+      "displayed_publication_date": "2025-08-01",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "My Ford has Lane Keep Assist and Adaptive Cruise Control.  Why do you idiots keep telling me it can’t work with OpenPilot",
+      "url": "https://bluepilot.dev/announcements/?post=my-ford-has-lane-keep-assist-and-adaptive-cruise-control-why-do-you-idiots-keep-telling-me-it-cant-work-with-openpilot",
+      "displayed_publication_date": "2025-07-29",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Why is Experimental Mode Greyed Out",
+      "url": "https://bluepilot.dev/announcements/?post=why-is-experimental-mode-greyed-out",
+      "displayed_publication_date": "2025-07-28",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot 4.0 Release",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-4-0-release",
+      "displayed_publication_date": "2025-07-25",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "My Device is Stuck at the Comma Logo While Installing BluePilot",
+      "url": "https://bluepilot.dev/announcements/?post=my-device-is-stuck-at-the-comma-logo-while-installing-bluepilot",
+      "displayed_publication_date": "2025-07-13",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Which Version of BluePilot Should I Install?",
+      "url": "https://bluepilot.dev/announcements/?post=which-version-of-bluepilot-should-i-install",
+      "displayed_publication_date": "2025-07-13",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "BluePilot Version History",
+      "url": "https://bluepilot.dev/announcements/?post=bluepilot-version-history",
+      "displayed_publication_date": "2025-07-13",
+      "archive_page": 3,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Desired Curvature versus Predicted Curvature and why it matters for Ford",
+      "url": "https://bluepilot.dev/announcements/?post=desired-curvature-versus-predicted-curvature-and-why-it-matters-for-ford",
+      "displayed_publication_date": "2025-07-13",
+      "archive_page": 4,
+      "review": "article_text_read"
+    },
+    {
+      "title": "How do Ford Lateral Controls Work and Why Are They Such a Challenge for OpenPilot?",
+      "url": "https://bluepilot.dev/announcements/?post=how-do-ford-lateral-controls-work-and-why-are-they-such-a-challenge-for-openpilot",
+      "displayed_publication_date": "2025-07-13",
+      "archive_page": 4,
+      "review": "article_text_read"
+    },
+    {
+      "title": "What is “the Model”, why does it change so often, and why can’t we fix problem x/y/z on Fords?",
+      "url": "https://bluepilot.dev/announcements/?post=what-isthe-model-why-does-it-change-so-often-and-why-cant-we-fix-problem-x-y-z-on-fords",
+      "displayed_publication_date": "2025-07-13",
+      "archive_page": 4,
+      "review": "article_text_read"
+    },
+    {
+      "title": "Welcome To BluePilot!",
+      "url": "https://bluepilot.dev/announcements/?post=welcome",
+      "displayed_publication_date": "2025-07-12",
+      "archive_page": 4,
+      "review": "article_text_read"
+    }
+  ]
+}
+
