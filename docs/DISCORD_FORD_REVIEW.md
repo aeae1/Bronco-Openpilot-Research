@@ -97,3 +97,20 @@ The owner's identification step is complete. Another FORScan identification scan
 - Search results and selected surrounding message history were read. Private drive logs, attachment contents, and developers' physical setups were not independently validated. No claim is made to have exhausted other servers, private threads, unindexed attachments, or deleted messages.
 
 This report contains paraphrases and source links. It excludes VINs, private device/route identifiers, raw owner records, and raw Discord conversations.
+
+## September 15 follow-up: BluePilot community and firmware attachments
+
+BluePilot's [official website](https://bluepilot.dev/) directs users to the **sunnypilot Discord, #ford**, rather than identifying a separate BluePilot server. The existing signed-in account already had access to [that channel](https://discord.com/channels/880416502577266699/1064822699085545522), which was opened and reviewed. This extends the earlier comma.ai-only search.
+
+All five exact identifiers were searched individually across the accessible indexed messages in **both sunnypilot and comma.ai**, without a channel restriction. Each returned no results. This does not establish absence from unindexed attachment contents or private exchanges.
+
+Additional bounded checks:
+
+- Sunnypilot #ford: all 66 Bronco results across three pages, 13 VBF results, and 11 PSCM results with links.
+- Sunnypilot attachment searches: `in:ford has:file Bronco` returned none; `in:ford has:file firmware` returned two unrelated results. The broad `in:ford has:file` search returned 1,217 results; only the newest 25 were inspected, so this was not an exhaustive attachment inventory.
+- Sunnypilot #ford firmware-family searches: `14D003` returned one different Lincoln strategy; `14H483` and `14F397` returned none.
+- Comma.ai: `in:ford has:file firmware` returned six results, including identification text and unrelated development material; `in:fw-mods Ford` returned six older Ford discussions. Neither supplied the requested files.
+
+The relevant shared source links led back to the already-inspected public Ford PSCM research project or to unrelated/modified firmware discussions. **No matching original firmware file was located or downloaded.** A generically named archive could contain material that message search does not index; no such archive was established as a candidate here.
+
+The identified community provides a concrete place for a request for original, shareable packages or a legitimate vendor source. No request, direct message, or other Discord post was sent during this follow-up. No raw conversations or private identifiers are included in this record.
