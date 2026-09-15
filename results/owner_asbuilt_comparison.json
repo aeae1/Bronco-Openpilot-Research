@@ -1,0 +1,55 @@
+{
+  "research_date": "2026-09-15",
+  "source_record": "results/owner_asbuilt_identification.json",
+  "steering_sample_comparison": [
+    {
+      "role": "software",
+      "did": "0xF188",
+      "analyzed_sample": "NB3C-14D003-AB",
+      "asbuilt_record": "RB3C-14D003-AA",
+      "identifiers_match": false
+    },
+    {
+      "role": "data_1",
+      "did": "0xF124",
+      "analyzed_sample": "NB3C-14D004-AD",
+      "asbuilt_record": "NB3V-14D004-BF",
+      "identifiers_match": false
+    },
+    {
+      "role": "cal_config",
+      "did": "0xF10A",
+      "analyzed_sample": "NB3C-14D007-AAB",
+      "asbuilt_record": "NB3C-14D007-AHD",
+      "identifiers_match": false
+    }
+  ],
+  "upstream_comparison": {
+    "repository": "commaai/opendbc",
+    "revision": "057aee25b5eee7530f0b95b5b508c8c3247b0cd7",
+    "source_path": "opendbc/car/ford/fingerprints.py",
+    "source_url": "https://raw.githubusercontent.com/commaai/opendbc/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/fingerprints.py",
+    "sha256": "db005010975d258873aae6eef0cbd857ca4f5d652f009aa4777fc84f5341dcb8",
+    "platform": "FORD_RANGER_MK2",
+    "ecu": "eps",
+    "diagnostic_address": "0x730",
+    "software_identifiers": [
+      "NB3C-14D003-AB",
+      "NL14-14D003-AE",
+      "RB3C-14D003-AA"
+    ],
+    "asbuilt_program_identifier_listed": true,
+    "analyzed_program_identifier_listed": true,
+    "limits": "Firmware-response identifiers only. This file contains no firmware binary and establishes neither matching calibration/hardware nor Bronco support."
+  },
+  "gateway_download_attempt": {
+    "requested_file": "MB3T-14H483-FAH.VBF",
+    "status": 200,
+    "bytes": 1172,
+    "content_type": "application/octet-stream; Charset=UTF-8",
+    "disposition": null,
+    "sha256": "6283acb39ff988b7842ad6881b63f2fe6e148f0f0f3ee1a9ef0c8ad106224467",
+    "response_type": "not_firmware",
+    "endpoint": "https://www.fordtechservice.dealerconnection.com/vdirs/wds/PCMReprogram/DSFM_DownloadFile.asp"
+  }
+}

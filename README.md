@@ -12,6 +12,8 @@ A publicly posted Bronco steering-computer firmware sample contains a real recei
 
 That gives us a concrete place to continue. It does not yet tell us whether the owner's installed steering computer has the same firmware, whether its network gateway delivers the message, or whether the steering application permits sustained lane centering.
 
+**September 15 identification update:** the owner's As-Built record lists steering software `RB3C-14D003-AA`, which differs from the analyzed `NB3C-14D003-AB` sample, and gateway software `MB3T-14H483-FAH`. A live module match and the corresponding firmware files remain outstanding. [Read what the record changes](docs/ASBUILT_FINDINGS.md).
+
 | Question | Current evidence |
 |---|---|
 | Does the public sample recognize LMC2? | A traced receive path, arrival tracking, checksum/counter handling, and stale-data handling are present. |
@@ -24,6 +26,7 @@ That gives us a concrete place to continue. It does not yet tell us whether the 
 
 ## Start here
 
+- [Owner As-Built findings and exact firmware-file request](docs/ASBUILT_FINDINGS.md)
 - [Gateway firmware search: acquired files, limits, and useful owner downloads](docs/FIRMWARE_ACQUISITION.md)
 - [New findings: application consumers, startup selection, and remaining gates](docs/POST_VALIDATION_FINDINGS.md)
 - [Owner guide: what to collect with FORScan and your OBD adapter](docs/OWNER_COLLECTION_GUIDE.md)

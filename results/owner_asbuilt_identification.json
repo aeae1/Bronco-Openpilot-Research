@@ -1,0 +1,235 @@
+{
+  "source_type": "Owner-supplied Ford As-Built server record",
+  "live_vehicle_read": false,
+  "module_nodes_in_file": 30,
+  "configuration_data_rows_in_file": 933,
+  "label_basis": "Common Ford DID labels cross-checked against public MDX references; original DID values are preserved.",
+  "modules": [
+    {
+      "module": "GWM",
+      "node": "0x716",
+      "identification": [
+        {
+          "did": "0xF10A",
+          "label": "ECU Cal-Config Part Number",
+          "part_number": "MB3T-14H485-FAG",
+          "placeholder": false
+        },
+        {
+          "did": "0xF110",
+          "label": "Subsystem Specific Diagnostic Specification Part Number",
+          "part_number": "DSPU5T-14H474-FAA",
+          "placeholder": false
+        },
+        {
+          "did": "0xF111",
+          "label": "ECU Core Assembly Number",
+          "part_number": "RU5T-14H475-AAD",
+          "placeholder": false
+        },
+        {
+          "did": "0xF113",
+          "label": "ECU Delivery Assembly Number",
+          "part_number": "RU5T-14H474-FAH",
+          "placeholder": false
+        },
+        {
+          "did": "0xF16B",
+          "label": "ECU Cal-Config #2 Part Number",
+          "part_number": "XXXX-14H525-XXX",
+          "placeholder": true
+        },
+        {
+          "did": "0xF16C",
+          "label": "ECU Cal-Config #3 Part Number",
+          "part_number": "MB3T-14H484-FAG",
+          "placeholder": false
+        },
+        {
+          "did": "0xF188",
+          "label": "Vehicle Manufacturer ECU Software Number",
+          "part_number": "MB3T-14H483-FAH",
+          "placeholder": false
+        }
+      ]
+    },
+    {
+      "module": "PSCM",
+      "node": "0x730",
+      "identification": [
+        {
+          "did": "0xF10A",
+          "label": "ECU Cal-Config Part Number",
+          "part_number": "NB3C-14D007-AHD",
+          "placeholder": false
+        },
+        {
+          "did": "0xF110",
+          "label": "Subsystem Specific Diagnostic Specification Part Number",
+          "part_number": "DSPB3C-3F964-AA",
+          "placeholder": false
+        },
+        {
+          "did": "0xF111",
+          "label": "ECU Core Assembly Number",
+          "part_number": "MB3C-14F079-BB",
+          "placeholder": false
+        },
+        {
+          "did": "0xF113",
+          "label": "ECU Delivery Assembly Number",
+          "part_number": "NB3V-3F964-BF",
+          "placeholder": false
+        },
+        {
+          "did": "0xF124",
+          "label": "ECU Calibration Data #1 Number",
+          "part_number": "NB3V-14D004-BF",
+          "placeholder": false
+        },
+        {
+          "did": "0xF188",
+          "label": "Vehicle Manufacturer ECU Software Number",
+          "part_number": "RB3C-14D003-AA",
+          "placeholder": false
+        }
+      ]
+    },
+    {
+      "module": "IPMA",
+      "node": "0x706",
+      "identification": [
+        {
+          "did": "0xF110",
+          "label": "Subsystem Specific Diagnostic Specification Part Number",
+          "part_number": "DSM2DT-19H406-AB",
+          "placeholder": false
+        },
+        {
+          "did": "0xF111",
+          "label": "ECU Core Assembly Number",
+          "part_number": "M2DT-14F403-CD",
+          "placeholder": false
+        },
+        {
+          "did": "0xF113",
+          "label": "ECU Delivery Assembly Number",
+          "part_number": "M2DT-19H406-CH",
+          "placeholder": false
+        },
+        {
+          "did": "0xF120",
+          "label": "ECU Software #2 Part Number",
+          "part_number": "M2DT-14F397-BD",
+          "placeholder": false
+        },
+        {
+          "did": "0xF124",
+          "label": "ECU Calibration Data #1 Number",
+          "part_number": "M2DT-14F398-AH",
+          "placeholder": false
+        },
+        {
+          "did": "0xF125",
+          "label": "ECU Calibration Data #2 Number",
+          "part_number": "M2DT-14F398-BD",
+          "placeholder": false
+        },
+        {
+          "did": "0xF188",
+          "label": "Vehicle Manufacturer ECU Software Number",
+          "part_number": "M2DT-14F397-AH",
+          "placeholder": false
+        }
+      ]
+    }
+  ],
+  "firmware_search_candidates": [
+    {
+      "module": "GWM",
+      "source_did": "0xF10A",
+      "part_number": "MB3T-14H485-FAG",
+      "role": "calibration/configuration",
+      "vbf_filename_candidate": "MB3T-14H485-FAG.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "GWM",
+      "source_did": "0xF16C",
+      "part_number": "MB3T-14H484-FAG",
+      "role": "calibration/configuration",
+      "vbf_filename_candidate": "MB3T-14H484-FAG.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "GWM",
+      "source_did": "0xF188",
+      "part_number": "MB3T-14H483-FAH",
+      "role": "software",
+      "vbf_filename_candidate": "MB3T-14H483-FAH.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "PSCM",
+      "source_did": "0xF10A",
+      "part_number": "NB3C-14D007-AHD",
+      "role": "calibration/configuration",
+      "vbf_filename_candidate": "NB3C-14D007-AHD.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "PSCM",
+      "source_did": "0xF124",
+      "part_number": "NB3V-14D004-BF",
+      "role": "calibration/configuration",
+      "vbf_filename_candidate": "NB3V-14D004-BF.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "PSCM",
+      "source_did": "0xF188",
+      "part_number": "RB3C-14D003-AA",
+      "role": "software",
+      "vbf_filename_candidate": "RB3C-14D003-AA.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "IPMA",
+      "source_did": "0xF120",
+      "part_number": "M2DT-14F397-BD",
+      "role": "software",
+      "vbf_filename_candidate": "M2DT-14F397-BD.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "IPMA",
+      "source_did": "0xF124",
+      "part_number": "M2DT-14F398-AH",
+      "role": "calibration/configuration",
+      "vbf_filename_candidate": "M2DT-14F398-AH.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "IPMA",
+      "source_did": "0xF125",
+      "part_number": "M2DT-14F398-BD",
+      "role": "calibration/configuration",
+      "vbf_filename_candidate": "M2DT-14F398-BD.VBF",
+      "download_verified": false
+    },
+    {
+      "module": "IPMA",
+      "source_did": "0xF188",
+      "part_number": "M2DT-14F397-AH",
+      "role": "software",
+      "vbf_filename_candidate": "M2DT-14F397-AH.VBF",
+      "download_verified": false
+    }
+  ],
+  "limits": [
+    "The record does not prove which software or hardware is currently installed.",
+    "As-Built configuration and identification are not executable firmware.",
+    "VBF names are search candidates; package availability and filenames are unverified.",
+    "The placeholder XXXX-14H525-XXX is excluded from firmware requests."
+  ]
+}

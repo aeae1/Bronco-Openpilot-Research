@@ -2,6 +2,8 @@
 
 Research continued September 14–15, 2026. Status checked September 15, 2026.
 
+**Follow-up:** the owner has now supplied the As-Built record. The gateway software is listed as `MB3T-14H483-FAH`; steering is `RB3C-14D003-AA`, different from the sample already analyzed. See [the new identification findings](ASBUILT_FINDINGS.md) and [precise file request](FIRMWARE_FILE_REQUEST.md). The acquisition attempts below are preserved as history.
+
 **No executable firmware matched to the owner's Bronco gateway has been obtained.** Eight additional public files have been downloaded and checked for offline comparison: camera and steering firmware from other Ford vehicles, plus gateway and camera diagnostic definitions. None is established as software installed in the owner's 2024 full-size Bronco.
 
 ## What is available now
@@ -45,7 +47,7 @@ Other public archives inspected did not provide a verified Bronco gateway execut
 
 The owner supplied a VIN privately. It passes the standard check-digit calculation. Navigation to [Ford's As-Built lookup](https://www.motorcraftservice.com/AsBuilt) returned a `502 Bad Gateway` page stating that certificate verification failed, including after one browser reload. The form was not reached and no VIN query was submitted. This is an access failure from this environment, not a vehicle-not-found result.
 
-**A useful owner download now:** open the official Ford As-Built lookup in your own browser, enter your VIN, and send the downloaded record or screenshots of the module identifiers. This retrieves a server-held factory record; it does not connect to or change the vehicle. If the page also fails for you, the later FORScan identification read remains useful.
+**Completed by the owner:** the downloaded As-Built record is now available privately and its selected module identifiers have been extracted. No further As-Built download is needed. The later FORScan identification read remains useful to check what is currently installed.
 
 An As-Built record may include module software identifiers, but it is **not executable firmware**. Treat its identifiers as factory-record evidence until compared with live module identification; updates or replacements can change what is installed. The VIN and raw owner records are excluded from the public repository.
 

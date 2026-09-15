@@ -6,6 +6,8 @@ Prepared September 14, 2026, for the 2024 full-size Bronco investigation.
 
 The first collection is identification only. No firmware dump, programming, vehicle disassembly, or driving experiment is needed.
 
+**September 15 update:** the owner supplied a Ford As-Built file, and all three target module records were extracted. [Results](ASBUILT_FINDINGS.md). No additional As-Built download is needed. A later live identification read can confirm those server-record values; matching firmware downloads can now be requested by [exact identifier](FIRMWARE_FILE_REQUEST.md).
+
 ## The smallest useful packet
 
 Send these in our chat. Photos or screenshots are enough; you do not need to interpret the numbers.
@@ -27,7 +29,7 @@ The owner's pictured adapter is a BlueDriver. It can provide a preliminary fault
 
 A fault scan is not a firmware dump. BlueDriver's [Vehicle Identification documentation](https://support.bluedriver.com/en/articles/15108431-vehicle-identification) describes VIN-based identification; it does not establish that the app exposes the GWM/PSCM/IPMA software/calibration identifiers needed here. If those fields are absent, send what you have and collect specific module identification with a compatible FORScan adapter later. Do not spend time trying to make BlueDriver act as an ELM327 adapter. Neither a fault report nor an adapter purchase is required for offline research to continue.
 
-The owner's VIN also enables an attempt to obtain Ford's factory As-Built record. That lookup currently fails from this environment; an owner download may help before the scanner is available. Existing Ford update files or module-specific package lists are also useful. See [the exact download guidance](FIRMWARE_ACQUISITION.md#vin-and-as-built-lookup). Do not start a vehicle update merely to obtain research inputs.
+The owner has already supplied Ford's As-Built record, so the next useful file collection is the matching software/data packages or their module-specific file lists. See [the exact download guidance](FIRMWARE_FILE_REQUEST.md). Do not start a vehicle update merely to obtain research inputs.
 
 ## Before connecting
 
