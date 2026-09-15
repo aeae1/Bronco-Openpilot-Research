@@ -4,11 +4,11 @@ Baseline: September 14, 2026. The repository records offline findings, with no v
 
 ## 1. Match the actual vehicle
 
-**Progress September 15:** the owner's As-Built record identifies all three target modules. Its steering program and both relevant data identifiers differ from the analyzed sample. [Comparison](ASBUILT_FINDINGS.md). The [exact file request](FIRMWARE_FILE_REQUEST.md) prioritizes the gateway, then the recorded steering set, then the camera set. No matching executable firmware was obtained from the new identifier searches; live identification remains needed to check the server record.
+**Progress September 15:** the owner's As-Built record identifies all three target modules. Its steering program and both relevant data identifiers differ from the analyzed sample. [Comparison](ASBUILT_FINDINGS.md). The [exact file request](FIRMWARE_FILE_REQUEST.md) prioritizes the gateway, then the recorded steering set, then the camera set. No matching executable firmware was obtained. The owner has now supplied connected-session FORScan identification matching the three main strategies, all three displayed part numbers, and two displayed calibration identifiers. [Findings and limits](FORSCAN_FINDINGS.md).
 
-**Input from the owner:** a read-only module-information export for the steering computer (PSCM), windshield camera (IPMA), and gateway (GWM), plus the adapter model and vehicle configuration. The [owner collection guide](OWNER_COLLECTION_GUIDE.md) explains how to collect it; the [worksheet](VEHICLE_INFO.md) provides a compact form. This input is not required to begin the next offline milestone.
+**Owner identification received:** Configuration text, Log/Modules screenshots, FORScan 2.3.68 on Windows, and the OHP USB ELM327 adapter model. No repeat identification collection is needed for this step. The [owner collection guide](OWNER_COLLECTION_GUIDE.md) and [worksheet](VEHICLE_INFO.md) remain available for future collections.
 
-**Result needed:** a comparison of installed hardware, strategy, and calibration identifiers against the public sample. A similar part-number prefix alone is insufficient. If the firmware differs, obtain a lawfully available matching sample and repeat the structural work before carrying addresses over.
+**Identification result:** the reported steering strategy and displayed calibration differ from the public sample. **Remaining work:** obtain matching executable/data files and repeat the structural work before carrying addresses over. A similar part-number prefix or a diagnostic identifier alone cannot establish binary equivalence.
 
 This can happen alongside the next offline milestone.
 
@@ -27,7 +27,7 @@ This can happen alongside the next offline milestone.
 
 ## 3. Establish message delivery with passive evidence
 
-**Input needed:** existing development captures, or carefully planned passive observations at the relevant network segments by someone equipped to do that work. A generic OBD connection does not automatically show the traffic at the steering rack. The adapter's model and capabilities must be established first.
+**Input needed:** existing development captures, or carefully planned passive observations at the relevant network segments by someone equipped to do that work. A generic OBD connection does not automatically show the traffic at the steering rack. The owner's OHP ELM327 adapter has been identified, but its successful diagnostic read does not establish passive capture capability on the relevant segments.
 
 **Result needed:** evidence that distinguishes a message present near the camera, absent after the gateway, and present at the steering computer. Record firmware/configuration identities, capture location, protocol, timing, and any observed faults with the data. A capture cannot establish acceptance solely because the message is visible.
 

@@ -4,7 +4,7 @@ For the beginner walkthrough, equipment checklist, and explanation of what can c
 
 The first useful vehicle input is identification information. A firmware file found online may describe a different steering-computer revision from the one installed in the target Bronco.
 
-**Server-record identification received September 15, 2026:** GWM software `MB3T-14H483-FAH`, PSCM software `RB3C-14D003-AA`, and IPMA software `M2DT-14F397-AH`. See [all extracted fields and the comparison with the analyzed sample](ASBUILT_FINDINGS.md). These values came from the owner's As-Built file; live module identification is still outstanding. Use the worksheet below to record the later live read separately.
+**Server-record identification received September 15, 2026:** GWM software `MB3T-14H483-FAH`, PSCM software `RB3C-14D003-AA`, and IPMA software `M2DT-14F397-AH`. See [all extracted fields and the comparison with the analyzed sample](ASBUILT_FINDINGS.md). These values initially came from As-Built. The owner has now supplied connected-session FORScan identification matching all three strategies; [the separate live-session record](FORSCAN_FINDINGS.md) preserves the displayed fields and limitations. The worksheet below is retained for future use; this collection need not be repeated.
 
 Using FORScan's module-information readout, save the displayed identifiers for the modules below. Screen names vary by FORScan version. This task is limited to reading information; it does not require configuration changes, programming, actuator tests, or clearing faults. Module-information queries are read-only diagnostic requests, which are different from a purely passive network capture.
 

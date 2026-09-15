@@ -4,28 +4,29 @@
 
 Can a **2024 full-size Ford Bronco** use openpilot through Ford's factory lane-centering interface while retaining factory steering protections and independent Panda safety checks?
 
-**Status: offline research, September 14, 2026. No working vehicle port or validated installation is available here.** The full-size Bronco is absent from the [upstream Ford definitions inspected](https://github.com/commaai/opendbc/blob/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/values.py). The Bronco Sport is a different vehicle.
+**Status: offline firmware research with owner diagnostic identification, September 15, 2026. No working vehicle port or validated installation is available here.** The full-size Bronco is absent from the [upstream Ford definitions inspected](https://github.com/commaai/opendbc/blob/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/values.py). The Bronco Sport is a different vehicle.
 
 ## What we found
 
 A publicly posted Bronco steering-computer firmware sample contains a real receive and validation path for **LMC2**, the lane-centering message used by openpilot on some supported Fords. The investigation followed that path beyond the list of message IDs and compared its checksum arithmetic with upstream opendbc: **10,640 software comparisons, zero mismatches**.
 
-That gives us a concrete place to continue. It does not yet tell us whether the owner's installed steering computer has the same firmware, whether its network gateway delivers the message, or whether the steering application permits sustained lane centering.
+That gives us a concrete place to continue. The owner's connected-session identification reports a different steering strategy. Gateway delivery and sustained steering permission remain unresolved.
 
-**September 15 identification update:** the owner's As-Built record lists steering software `RB3C-14D003-AA`, which differs from the analyzed `NB3C-14D003-AB` sample, and gateway software `MB3T-14H483-FAH`. A live module match and the corresponding firmware files remain outstanding. [Read what the record changes](docs/ASBUILT_FINDINGS.md).
+**September 15 identification update:** the owner's As-Built record lists steering software `RB3C-14D003-AA`, which differs from the analyzed `NB3C-14D003-AB` sample, and gateway software `MB3T-14H483-FAH`. The owner's FORScan session now reports matching GWM, PSCM, and IPMA strategy identifiers; the corresponding executable files remain missing. FORScan lists PSCM under CANFD and IPMA under HSCAN2, which does not establish message forwarding. [Read the connected-session findings](docs/FORSCAN_FINDINGS.md).
 
 | Question | Current evidence |
 |---|---|
 | Does the public sample recognize LMC2? | A traced receive path, arrival tracking, checksum/counter handling, and stale-data handling are present. |
 | What did this investigation add? | A corrected receive-table interpretation, a mapped internal route, a checksum comparison, and a trace into application consumers and startup input selection. |
 | Does this explain the reported connection problem? | No. Delivery through the gateway and acceptance inside the steering computer remain separate unresolved questions. |
-| Can this Bronco safely run openpilot now? | This research does not establish that. No vehicle testing was performed. |
+| Can this Bronco safely run openpilot now? | This research does not establish that. Owner diagnostic identification was collected; no steering-control or driving tests were performed. |
 | Must we defeat a security system? | Nothing in the traced receive/checksum path establishes that requirement. Other activation or security conditions have not been ruled out. |
 
 **New follow-up:** the trace now reaches application code that consumes LMC2 path data. The sample's startup defaults select its LMC2 input branch, confirmed by targeted virtual-memory checks. Its validity state also participates in broader application status checks. Read [the new findings and their limits](docs/POST_VALIDATION_FINDINGS.md). Selecting an input source is still separate from permitting steering.
 
 ## Start here
 
+- [FORScan findings: confirmed identifiers, displayed network groups, and download failures](docs/FORSCAN_FINDINGS.md)
 - [Owner As-Built findings and exact firmware-file request](docs/ASBUILT_FINDINGS.md)
 - [Gateway firmware search: acquired files, limits, and useful owner downloads](docs/FIRMWARE_ACQUISITION.md)
 - [New findings: application consumers, startup selection, and remaining gates](docs/POST_VALIDATION_FINDINGS.md)

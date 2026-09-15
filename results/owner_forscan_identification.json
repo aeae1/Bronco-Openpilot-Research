@@ -1,0 +1,102 @@
+{
+  "collection_date": "2026-09-15",
+  "source": "Owner-pasted FORScan Configuration text and owner-supplied Log/Modules screenshots from a connected session; manually transcribed selected fields",
+  "forscan_version": "2.3.68",
+  "operating_system": "Windows",
+  "adapter": {
+    "owner_identified_model": "OHP ELMconfig USB with manual HS-CAN/MS-CAN switch",
+    "reported_interface": "FTDI USB",
+    "reported_elm_version": "1.4",
+    "reported_link_bps": 500000,
+    "reported_min_delay_ms": 3,
+    "reported_can_errors": 2,
+    "reported_can_error_percent": 1.0,
+    "forscan_not_recommended_warning": true
+  },
+  "displayed_voltage_v": 11.9,
+  "profile_cache_reuse": "Unknown",
+  "modules": [
+    {
+      "module": "GWM",
+      "part_number": "RU5T-14H474-FAH",
+      "calibration_level": "RU5T-14H474-FAH",
+      "strategy": "MB3T-14H483-FAH",
+      "calibration": null,
+      "forscan_bus_group": "HSCAN"
+    },
+    {
+      "module": "PSCM",
+      "part_number": "NB3V-3F964-BF",
+      "calibration_level": "NB3V-3F964-BF",
+      "strategy": "RB3C-14D003-AA",
+      "calibration": "NB3V-14D004-BF",
+      "forscan_bus_group": "CANFD"
+    },
+    {
+      "module": "IPMA",
+      "part_number": "M2DT-19H406-CH",
+      "calibration_level": "M2DT-19H406-CH",
+      "strategy": "M2DT-14F397-AH",
+      "calibration": "M2DT-14F398-AH",
+      "forscan_bus_group": "HSCAN2"
+    }
+  ],
+  "asbuilt_comparisons": [
+    {
+      "module": "GWM",
+      "forscan_field": "part_number",
+      "asbuilt_did": "0xF113",
+      "matches": true
+    },
+    {
+      "module": "GWM",
+      "forscan_field": "strategy",
+      "asbuilt_did": "0xF188",
+      "matches": true
+    },
+    {
+      "module": "PSCM",
+      "forscan_field": "part_number",
+      "asbuilt_did": "0xF113",
+      "matches": true
+    },
+    {
+      "module": "PSCM",
+      "forscan_field": "strategy",
+      "asbuilt_did": "0xF188",
+      "matches": true
+    },
+    {
+      "module": "PSCM",
+      "forscan_field": "calibration",
+      "asbuilt_did": "0xF124",
+      "matches": true
+    },
+    {
+      "module": "IPMA",
+      "forscan_field": "part_number",
+      "asbuilt_did": "0xF113",
+      "matches": true
+    },
+    {
+      "module": "IPMA",
+      "forscan_field": "strategy",
+      "asbuilt_did": "0xF188",
+      "matches": true
+    },
+    {
+      "module": "IPMA",
+      "forscan_field": "calibration",
+      "asbuilt_did": "0xF124",
+      "matches": true
+    }
+  ],
+  "limits": [
+    "Identification responses are not firmware bytes or cryptographic verification.",
+    "Bus groups are FORScan display classifications, not a passive capture or independently verified wiring map.",
+    "A CANFD module group does not establish native CAN-FD capability in this ELM327 adapter.",
+    "Diagnostic reachability does not prove forwarding of lane-centering traffic.",
+    "Only displayed identification fields are confirmed; additional As-Built software/data entries remain server-record-only.",
+    "VINs, adapter serial, odometer, unrelated module data and raw screenshots are excluded."
+  ]
+}

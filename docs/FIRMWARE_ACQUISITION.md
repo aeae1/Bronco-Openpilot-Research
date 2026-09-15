@@ -47,7 +47,7 @@ Other public archives inspected did not provide a verified Bronco gateway execut
 
 The owner supplied a VIN privately. It passes the standard check-digit calculation. Navigation to [Ford's As-Built lookup](https://www.motorcraftservice.com/AsBuilt) returned a `502 Bad Gateway` page stating that certificate verification failed, including after one browser reload. The form was not reached and no VIN query was submitted. This is an access failure from this environment, not a vehicle-not-found result.
 
-**Completed by the owner:** the downloaded As-Built record is now available privately and its selected module identifiers have been extracted. No further As-Built download is needed. The later FORScan identification read remains useful to check what is currently installed.
+**Completed by the owner:** the downloaded As-Built record is now available privately and its selected module identifiers have been extracted. No further As-Built download is needed. The later FORScan identification read has also been received and matches the three main strategies. [Connected-session results and subsequent unsuccessful owner web downloads](FORSCAN_FINDINGS.md).
 
 An As-Built record may include module software identifiers, but it is **not executable firmware**. Treat its identifiers as factory-record evidence until compared with live module identification; updates or replacements can change what is installed. The VIN and raw owner records are excluded from the public repository.
 

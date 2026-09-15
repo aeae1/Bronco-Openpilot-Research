@@ -2,7 +2,7 @@
 
 September 15, 2026. Source: the owner-supplied Ford As-Built file. The raw file and VIN remain private; [the extracted identification](../results/owner_asbuilt_identification.json) contains only selected module part/software identifiers.
 
-**The file supplies the gateway, steering, and camera identifiers needed to focus the firmware search. It also shows that the steering software in this record differs from the sample analyzed so far.** These are server-record identifiers, not a live scan of the installed modules.
+**The file supplies the gateway, steering, and camera identifiers needed to focus the firmware search. It also shows that the steering software in this record differs from the sample analyzed so far.** These are server-record identifiers. A subsequent owner FORScan session reports matching main strategies and the other displayed target fields; see the [separate identification findings](FORSCAN_FINDINGS.md).
 
 ## Three relevant module records
 
@@ -32,7 +32,7 @@ The JSON preserves the original diagnostic identifiers. Descriptive labels were 
 | Data #1 | `NB3C-14D004-AD` | `NB3V-14D004-BF` | No |
 | Cal-Config | `NB3C-14D007-AAB` | `NB3C-14D007-AHD` | No |
 
-The receive-path, checksum, application-consumer, and startup-selection findings still describe the exact public sample on which they were measured. They cannot be carried over as verified addresses or behavior for `RB3C-14D003-AA`. Obtain the matching program/data files and repeat the relevant checks; a live identification read will establish whether the server record describes the installed modules.
+The receive-path, checksum, application-consumer, and startup-selection findings still describe the exact public sample on which they were measured. They cannot be carried over as verified addresses or behavior for `RB3C-14D003-AA`. Obtain the matching program/data files and repeat the relevant checks; the subsequent FORScan read reports the same strategy and displayed calibration identifiers, but does not supply or verify executable bytes.
 
 There is a useful comparison lead: upstream opendbc's [Ford firmware database at revision 057aee25](https://github.com/commaai/opendbc/blob/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/fingerprints.py) lists **both `NB3C-14D003-AB` and `RB3C-14D003-AA`** as steering ECU responses under `FORD_RANGER_MK2`. The same revision's [platform definition](https://github.com/commaai/opendbc/blob/057aee25b5eee7530f0b95b5b508c8c3247b0cd7/opendbc/car/ford/values.py) describes the 2024 Ranger with adaptive cruise and lane centering and uses its Ford CAN-FD configuration.
 
@@ -52,7 +52,7 @@ The gateway search can now focus on `MB3T-14H483-FAH` and its associated data in
 
 The [precise firmware-file request](FIRMWARE_FILE_REQUEST.md) lists ten software/data identifiers, with the gateway's three files first. They can be sought as normal vendor downloads or existing authorized update packages, without a vehicle connection. Their availability and container filenames are not yet verified.
 
-The As-Built file is sufficient to begin that targeted search. A later read-only FORScan identification report remains useful to compare installed GWM/PSCM/IPMA versions against this record. BlueDriver fault reports are optional and do not substitute for those software identifiers. No firmware extraction from the physical module or programming session is requested.
+The As-Built file is sufficient to begin that targeted search. The owner has now supplied the read-only FORScan identification report, completing that comparison for the displayed fields. [Results](FORSCAN_FINDINGS.md). BlueDriver fault reports are optional and do not substitute for those software identifiers. No firmware extraction from the physical module or programming session is requested.
 
 The two `ERROR` sections in the file say `PCM DATA NOT FOUND` and `CCC DATA NOT FOUND`. They describe absent sections in this record; they are not a live DTC scan and should not be interpreted as new vehicle faults. The target identification nodes are present despite those messages.
 

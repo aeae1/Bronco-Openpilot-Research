@@ -2,7 +2,7 @@
 
 September 15, 2026. These identifiers come from the owner's Ford As-Built record. [Interpretation and limits](ASBUILT_FINDINGS.md).
 
-**Request existing, unmodified vendor files for offline analysis. This is a download request, not an instruction to program a vehicle.** No matching executable files in this table have been acquired yet. The identifiers are established; the `.VBF` filenames below are candidates, not confirmed available downloads. A provider may distribute them inside another package format.
+**Request existing, unmodified vendor files for offline analysis. This is a download request, not an instruction to program a vehicle.** No matching executable files in this table have been acquired yet. **Owner FORScan identification now matches the three main strategies and the two displayed calibration-data identifiers. The public download form failed for the gateway with and without the extension; further requested names also failed according to the owner. Do not repeat that route without new evidence.** [Session findings](FORSCAN_FINDINGS.md). The identifiers are established; the `.VBF` filenames below are candidates, not confirmed available downloads. A provider may distribute them inside another package format.
 
 | Priority | Module | Recorded purpose | Identifier / candidate VBF filename |
 |---|---|---|---|

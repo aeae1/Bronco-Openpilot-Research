@@ -6,7 +6,7 @@ Prepared September 14, 2026, for the 2024 full-size Bronco investigation.
 
 The first collection is identification only. No firmware dump, programming, vehicle disassembly, or driving experiment is needed.
 
-**September 15 update:** the owner supplied a Ford As-Built file, and all three target module records were extracted. [Results](ASBUILT_FINDINGS.md). No additional As-Built download is needed. A later live identification read can confirm those server-record values; matching firmware downloads can now be requested by [exact identifier](FIRMWARE_FILE_REQUEST.md).
+**September 15 update:** the owner supplied a Ford As-Built file, and all three target module records were extracted. [Results](ASBUILT_FINDINGS.md). No additional As-Built download is needed. **Connected-session identification is now also received**, including adapter/software details and module grouping. [FORScan results](FORSCAN_FINDINGS.md). No repeat scan is needed for this step; the instructions below remain a reusable guide. Matching executable firmware is still missing; requests use these [exact identifiers](FIRMWARE_FILE_REQUEST.md).
 
 ## The smallest useful packet
 
@@ -49,7 +49,7 @@ If the adapter has never connected successfully, its model and the exact connect
 ## Collect the identification readout
 
 1. Open FORScan and use its normal **Connect** function. Let detection finish. Use the actual vehicle connection, not demonstration data. Note if the app reused an existing vehicle profile/cache, particularly after a module update.
-2. Find the **Vehicle / Vehicle and Interface** information area and its module details or connection log. Screen labels vary by version. FORScan's Windows documentation describes connection as discovering the adapter, then reading vehicle and module information. Its published full Windows walkthrough is older, so these are task-based directions rather than an exact current button map. [Official Windows connection documentation](https://forscan.org/documentation_13.html).
+2. Find the **Vehicle / Vehicle and Interface** information area and its module details or connection log. In the owner's Windows 2.3.68 session, the **Configuration** tab contained the identification text, while **Modules** showed network grouping. Screen labels vary by version. FORScan's Windows documentation describes connection as discovering the adapter, then reading vehicle and module information. Its published full Windows walkthrough is older, so these are task-based directions rather than an exact current button map. [Official Windows connection documentation](https://forscan.org/documentation_13.html).
 3. Save or screenshot the information for **PSCM, IPMA, and GWM**. Include each module heading and every identification line. Keep the original labels and punctuation. Several overlapping screenshots of a long log work.
 4. Capture the detected-module list and connection warnings. Note the date. Include battery voltage if already displayed; no live-gauge setup is needed.
 5. Disconnect in FORScan, switch the vehicle off, and unplug the adapter. Review/redact copies before sharing.
